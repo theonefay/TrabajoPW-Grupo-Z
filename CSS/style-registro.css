@@ -1,0 +1,34 @@
+/* PAGINA FORMULARIO-REGISTRO.HTML */
+body{
+    margin: 0%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.pagina-formulario{
+    background-color: #f9841e;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex: 1;
+   
+}
+.header-form{
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #00c40a;
+
+}
+.form{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: left;
+    background-color: red;
+    padding: 20px;
+    border-radius: 10%;
+
+}

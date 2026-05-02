@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    background-color: orange;
+
+}
+.fondo{
+     margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 80%;
+}
+
+/* --------------------HEADER------------------------------ */
+
+header{
+    background-color: rgb(205, 197, 197);
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.caja{
+    height: 100%;
+    width: 100px;
+}
+.caja.img{
+    width: 50px;
+    text-align: center;
+    background-color: transparent;
+}
+.img-logo{
+    height: 100%;
+}
+.medio{
+    flex:1;
+    background-color: rgb(205, 197, 197);
+}
+.caja.login-header-logo{
+    background-color: rgb(205, 197, 204);
+    width: 300px;
+    font-size: 100%;
+    text-align: right;
+    padding: 14px;
+}
+/* ----------------------MAIN------------------------------ */
+main{
+    background-color: rgb(217, 222, 224);
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(217, 222, 224); 
+    width: 50%;
+    height: auto;
+    align-items: center;
+    margin-bottom: 400px;
+    color: orange;
+    
+}
+.campo{
+    background-color:rgb(217,222,224); 
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 250px;
+    margin: 10px;
+    padding:0
+}
+.div-btn{
+    text-align: center;
+}
+.btn-iniciar{
+    background-color: orange;
+    width: 130px;
+    height: 30px;
+    border-radius:15%;
+    text-align: center;
+    font-family:'Franklin Gothic Medium';
+    border-color: rgb(255, 86, 25);
+
+}
+.div-recup-contraseña{
+    margin-top: 10px;
+}
+.button-recuperar-contraseña{
+    color: orange;
+}

@@ -1,0 +1,225 @@
+/* ----------------------------------------FORMATO BASICO DE LA CARTA--------------------------------------------------------------------- */
+.card{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 250px;
+    margin: 5px;
+    box-sizing: border-box;
+
+}
+.header-card{
+    display: flex;
+    background-color: blue;
+    width: 100%;
+    height:25px;
+}
+.nombre-card{
+    flex:1;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+.logo-card{
+    height: 100%;
+    width: 70px;
+    margin: 0%;
+}
+.img-card{
+    background-color: green;
+    width: 100%;
+    height: 250px;
+    border: 8px solid;
+    box-sizing: border-box;
+}
+.img-tamaño{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.body-card{
+    background-color: aqua;
+    border: 5px solid;
+    box-sizing: border-box;
+    flex: 1;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+/* ---------CARTA ANDROIDE-------- */
+.header-androide{
+    background-color: darkred;
+}
+.body-androide{
+    background-color: rgb(255, 0, 0);
+    color: rgb(234, 232, 232);
+    font-family: arial;
+    padding: 7px 5px;
+    border-radius: 0 0 5% 5%;
+}
+/* ------------CARTA SAIYAN---------------- */
+.header-saiyan{
+    background-color: darkorange;
+}
+.body-saiyan{
+    background-color: orange;
+    color: rgb(234, 232, 232);
+    font-family: arial;
+    padding: 7px 5px;
+    border-radius: 0 0 5% 5%;
+}
+/* --------------CARTA NAMEKIANO--------------- */
+.header-namekiano{
+    background-color: darkgreen;
+}
+.body-namekiano{
+    background-color: green;
+    color: rgb(234, 232, 232);
+    font-family: arial;
+    padding: 7px 5px;
+    border-radius: 0 0 5% 5%;
+}
+/* ---------CARTA DEMONIO DEL FRIO------------- */
+.header-demonio-del-frio{
+    background-color: rgb(215, 10, 215);
+}
+.body-demonio-del-frio{
+    background-color: rgb(249, 61, 249);
+    color: rgb(234, 232, 232);
+    font-family: arial;
+    padding: 7px 5px;
+    border-radius: 0 0 5% 5%;
+}
+
+
+
+/* -----------------CARTAS LEGENDARIAS---------------------- */
+
+.header-androide.legendary{
+    color: goldenrod;
+}
+.body-androide.legendary{
+    border-color: goldenrod;
+    color: rgb(219, 177, 72);
+    text-align: center;
+}
+.imagen-androide.legendary{
+    border-color: goldenrod;
+}
+.tipo-legendary-androide{ 
+    background-color: darkred;
+    font-size: 18px;
+    border: 1px solid goldenrod;
+    padding: 3px;
+}
+.legendary-span{
+    text-decoration-line: underline;
+    font-size: large;
+}
+
+/* ------------------CARTAS ELITES-------------------- */
+.header-saiyan.elite, .header-namekiano.elite, .header-demonio-del-frio.elite{
+    color: purple;
+}
+.body-saiyan.elite, .body-namekiano.elite, .body-demonio-del-frio.elite{
+    border-color: purple;
+    color: rgb(174, 25, 174);
+    text-align: center;
+}
+.imagen-saiyan.elite, .imagen-namekiano.elite, .imagen-demonio-del-frio.elite{
+    border-color: purple;
+   
+}
+.tipo-elite-saiyan, .tipo-elite-namekiano, .tipo-elite-namekiano{
+    background-color: purple;
+    font-size: 18px;
+    border: 1px solid purple;
+    padding: 3px;
+}
+.elite-span{
+    text-decoration-line: underline;
+    font-size: large;
+}
+
+
+ /* ---------------------CARTAS GUERRERO ------------------- */
+
+.header-saiyan.guerrero{
+    color: blue;
+}
+.body-saiyan.guerrero{
+    border-color: blue;
+    color: rgb(76, 76, 235);
+    text-align: center;
+}
+.imagen-saiyan.guerrero{
+    border-color: blue;
+   
+}
+.tipo-guerrero-saiyan{
+    background-color: blue;
+    font-size: 18px;
+    border: 1px solid blue;
+    padding: 3px;
+}
+.guerrero-span{
+    text-decoration-line: underline;
+    font-size: large;
+}
+
+
+
+/* .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+ */
+
+
+
+
+
+
+
+/* .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    height: 380px;
+    width: 200px;
+}
+.card img{
+    width: 50%;
+    height: 50%;
+   
+}
+.card.saiyan{
+    background: linear-gradient(#ffde0b,#ff931f)
+
+}
+.descripcion{
+    text-align: center ;   
+}
+
+.saiyan h2{
+    color: #ff931f;
+    
+}
+.card.namekiano{
+    background-color: #5bea08;
+}
+.namekiano h2{
+    color: #00c40a;
+}
+.card.demonio-del-frio{
+    background-color: purple;
+}
+.card.androide{
+    background-color: rgb(255, 27, 27);
+}
+.card.header-androide{
+    background-color: darkred;
+    margin: 0;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+} */

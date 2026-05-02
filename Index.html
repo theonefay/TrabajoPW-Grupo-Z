@@ -1,43 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-</head>
-<body>
-    <header>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/style-card.css">
+    <link rel="icon" href="/img/esfera.png" type="image/png">
+    <title>TP WEB</title>
+</head> 
+<body class="body-index">
+    <!---------        HEADER      ------------> 
+    <header class="header-index">
         <section>
-
+            <nav>
+                <ul class="lista-header">
+                    <li>
+                        <a href="formulario-registro.html">Registro</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </nav>
         </section>
     </header>
+    <!---------        MAIN       ------------> 
     <main>
-        <section>
-            <article>
-                <h1>
-                    Goku
-                </h1>
-                <img src="img/perfil-goku.jpg" alt="perfil-goku" style="width: 200px;">
-                <span>nivel de poder</span>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, repellendus id. Explicabo magnam accusantium maxime!</p>
+        <section class="contenedor-cards">
+           <article class="card">
+                <div class="header-card header-saiyan elite">
+                    <div class="nombre-card">GOKU</div>
+                    <div class="logo-card"><img src="img/logo-patrulla-roja.png"class="logo-card"></div>
+                </div>
+                <div class="img-card imagen-saiyan elite">
+                     <img src="img/goku.png" alt="perfil-cell" class="img-tamaño">
+                </div>
+                <div class="body-card body-saiyan elite">
+                     <span class="elite-span">SAIYAN</span>
+                     <p>Bioandroide creado para alcanzar la perfección. Posee las células de guerreros como Freezer, King Cold, Goku, Vegeta y Piccolo, lo que le permite utilizar sus técnicas y aumentar su poder constantemente. Su objetivo es convertirse en el ser perfecto.</p>
+                     <strong class="tipo-elite-saiyan">ELITE</strong>
+                </div>
             </article>
-             <article>
-                <h1>
-                    Vegeta
-                </h1>
-                <img src="img/perfil-vegeta.jpg" alt="perfil-vegeta" style="width: 200px;">
-                <span>nivel de poder</span>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, repellendus id. Explicabo magnam accusantium maxime!</p>
+            
+             <article class="card">
+                <div class="header-card header-saiyan elite">
+                    <div class="nombre-card elite">VEGETA</div>
+                    <div class="logo-card"><img src="img/logo-patrulla-roja.png"class="logo-card"></div>
+                </div>
+                <div class="img-card imagen-saiyan elite">
+                     <img src="img/perfil-vegeta.jpg" alt="perfil-vegeta" class="img-tamaño">
+                </div>
+                <div class="body-card body-saiyan elite">
+                     <span class="elite-span">SAIYAN</span>
+                     <p>Bioandroide creado para alcanzar la perfección. Posee las células de guerreros como Freezer, King Cold, Goku, Vegeta y Piccolo, lo que le permite utilizar sus técnicas y aumentar su poder constantemente. Su objetivo es convertirse en el ser perfecto.</p>
+                     <strong class="tipo-elite-saiyan">ELITE</strong>
+                </div>
             </article>
-             <article>
-                <h1>
-                    Gohan
-                </h1>
-                <img src="img/perfil-gohan.jpg" alt="perfil-gohan" style="width: 200px;">
-                <span>nivel de poder</span>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, repellendus id. Explicabo magnam accusantium maxime!</p>
+
+             <article class="card">
+                <div class="header-card header-saiyan guerrero">
+                    <div class="nombre-card guerrero">GOHAN</div>
+                    <div class="logo-card"><img src="img/logo-patrulla-roja.png"class="logo-card"></div>
+                </div>
+                <div class="img-card imagen-saiyan guerrero">
+                     <img src="img/perfil-gohan.jpg" alt="perfil-gohan" class="img-tamaño">
+                </div>
+                <div class="body-card body-saiyan guerrero">
+                     <span class="guerrero-span">SAIYAN</span>
+                     <p>Bioandroide creado para alcanzar la perfección. Posee las células de guerreros como Freezer, King Cold, Goku, Vegeta y Piccolo, lo que le permite utilizar sus técnicas y aumentar su poder constantemente. Su objetivo es convertirse en el ser perfecto.</p>
+                     <strong class="tipo-guerrero-saiyan">GUERRERO</strong>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="header-card header-demonio-del-frio elite">
+                    <div class="nombre-card elite">FREEZER</div>
+                    <div class="logo-card"><img src="img/logo-patrulla-roja.png"class="logo-card"></div>
+                </div>
+                <div class="img-card imagen-demonio-del-frio elite">
+                     <img src="img/freezer.png" alt="perfil-freezer" class="img-tamaño">
+                </div>
+                <div class="body-card body-demonio-del-frio elite">
+                     <span class="legendary-span">DEMONIO DEL FRIO</span>
+                     <p>Bioandroide creado para alcanzar la perfección. Posee las células de guerreros como Freezer, King Cold, Goku, Vegeta y Piccolo, lo que le permite utilizar sus técnicas y aumentar su poder constantemente. Su objetivo es convertirse en el ser perfecto.</p>
+                     <strong class="tipo-elite">ELITE</strong>
+                </div>
+            </article>
+            <article class="card androide">
+                <div class="header-card header-androide legendary">
+                    <div class="nombre-card legendary">CELL</div>
+                    <div class="logo-card"><img src="img/logo-patrulla-roja.png"class="logo-card"></div>
+                </div>
+                <div class="img-card imagen-androide legendary">
+                     <img src="img/cell.png" alt="perfil-cell" class="img-tamaño">
+                </div>
+                <div class="body-card body-androide legendary">
+                     <span class="legendary-span">ANDROIDE</span>
+                     <p>Bioandroide creado para alcanzar la perfección. Posee las células de guerreros como Freezer, King Cold, Goku, Vegeta y Piccolo, lo que le permite utilizar sus técnicas y aumentar su poder constantemente. Su objetivo es convertirse en el ser perfecto.</p>
+                     <strong class="tipo-legendary-androide">LEGENDARY</strong>
+                </div>
+            </article>
+            <article class="card">
+                <div class="header-card header-namekiano elite">
+                    <div class="nombre-card elite">PICCOLO</div>
+                    <div class="logo-card"><img src="img/logo-patrulla-roja.png"class="logo-card"></div>
+                </div>
+                <div class="img-card imagen-namekiano elite">
+                     <img src="img/Piccolo.jpg" alt="perfil-piccolo" class="img-tamaño">
+                </div>
+                <div class="body-card body-namekiano elite">
+                     <span class="elite-span">NAMEKIANO</span>
+                     <p>Bioandroide creado para alcanzar la perfección. Posee las células de guerreros como Freezer, King Cold, Goku, Vegeta y Piccolo, lo que le permite utilizar sus técnicas y aumentar su poder constantemente. Su objetivo es convertirse en el ser perfecto.</p>
+                     <strong class="tipo-elite-namekiano">ELITE</strong>
+                </div>
             </article>
         </section>
     </main>
+    <!---------        FOOTER      ------------> 
+    <footer>
+        <p>&copy; 2026 Dev Skills Deck. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
