@@ -16,12 +16,22 @@
 /* ------------MAIN------------- */
 main{
     flex:1;
+    display: flex;
+    flex-direction: column;
+    background-color:#f9841e;
+    align-items: center;
 }
 .contenedor-cards{
+    justify-content: center;
+    padding: 0 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: burlywood;
+    width: 80%;
+    height: auto;
+
+
 }
 
 /* -------------FOOTER----------------- */

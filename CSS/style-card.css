@@ -46,68 +46,122 @@
 /* --------------------------------------------------------------------------------------------------------------------------------------- */
 /* ---------CARTA ANDROIDE-------- */
 .header-androide{
-    background-color: darkred;
+    background-color: #7a0f0f;
 }
 .body-androide{
-    background-color: rgb(255, 0, 0);
-    color: rgb(234, 232, 232);
+    background-color: #c81e1e;
+    color: #f1f1f1;
     font-family: arial;
     padding: 7px 5px;
     border-radius: 0 0 5% 5%;
 }
 /* ------------CARTA SAIYAN---------------- */
 .header-saiyan{
-    background-color: darkorange;
+    background-color: #b8860b;
 }
 .body-saiyan{
-    background-color: orange;
-    color: rgb(234, 232, 232);
+    background-color: #e0a800;
+    color: #1a1a1a;
     font-family: arial;
     padding: 7px 5px;
     border-radius: 0 0 5% 5%;
 }
 /* --------------CARTA NAMEKIANO--------------- */
 .header-namekiano{
-    background-color: darkgreen;
+    background-color: #1f5f3a;
 }
 .body-namekiano{
-    background-color: green;
-    color: rgb(234, 232, 232);
+    background-color: #2e8b57;
+    color: #e8f5e9;
     font-family: arial;
     padding: 7px 5px;
     border-radius: 0 0 5% 5%;
 }
 /* ---------CARTA DEMONIO DEL FRIO------------- */
 .header-demonio-del-frio{
-    background-color: rgb(215, 10, 215);
+    background-color: #4b0082;
 }
 .body-demonio-del-frio{
-    background-color: rgb(249, 61, 249);
-    color: rgb(234, 232, 232);
+    background-color: #7b2cbf;
+    color: #f3e8ff;
     font-family: arial;
     padding: 7px 5px;
     border-radius: 0 0 5% 5%;
 }
+/* -------CARTA DIOS---------- */
+.header-dios{
+    background-color: #ff4500;
+}
+.body-dios{
+    background-color: #ff4500;
+    color: #1a1a1a;
+    font-family: arial;
+    padding: 7px 5px;
+    border-radius: 0 0 5% 5%;
+}
+/* ------CARTA ANGEL---------- */
+.header-angel{
+    background-color: #e0f7ff;
+}
+.body-angel{
+    background-color: #e0f7ff;
+    color: #1a1a1a;
+    font-family: arial;
+    padding:7px 5px;
+    border-radius: 0 0 5% 5%;
+}
+/* -------- SOLDADO DE FREEZEER ---------- */
+.header-soldado-de-freezer{
+    background-color: #555555;
+}
+.body-soldado-de-freezer{
+    background-color: #555555;
+    color: #f0f0f0;
+    font-family: arial;
+    padding: 7px 5px;
+    border-radius: 0 0 5% 5%;
+}
+/* ------------ CARTA MAJIN ------------- */
+.header-majin{
+    background-color: #ff69b4;
+}
+.body-majin{
+    background-color: #ff69b4;
+    color: #f5e6d3;
+    font-family: arial;
+    padding: 7px 5px;
+    border-radius: 0 0 5% 5%;
+}
+/* --------- DEMONIO --------------- */
+.header-demonio{
+    background-color: #5a2a0c;
+}
+.body-demonio{
+    background-color: #5a2a0c;
+    color: #f5e6d3;
+    font-family: arial;
+    padding: 7px 5px;
+    border-radius: 0 0 5% 5%;
 
-
+}
 
 /* -----------------CARTAS LEGENDARIAS---------------------- */
 
-.header-androide.legendary{
-    color: goldenrod;
+.header-androide.legendary, .header-saiyan.legendary{
+    color: #FFD700;
 }
-.body-androide.legendary{
-    border-color: goldenrod;
-    color: rgb(219, 177, 72);
+.body-androide.legendary, .body-saiyan.legendary{
+    border-color: #FFD700;
+    color: #FFD700;
     text-align: center;
 }
-.imagen-androide.legendary{
-    border-color: goldenrod;
+.imagen-androide.legendary, .imagen-saiyan.legendary{
+    border-color: #FFD700;
 }
-.tipo-legendary-androide{ 
-    background-color: darkred;
+.tipo-legendary-androide, .tipo-legendary-saiyan{  
+    background-color: #b8860b;
     font-size: 18px;
-    border: 1px solid goldenrod;
+    border: 1px solid #FFD700;
     padding: 3px;
 }
 .legendary-span{
@@ -116,54 +170,198 @@
 }
 
 /* ------------------CARTAS ELITES-------------------- */
-.header-saiyan.elite, .header-namekiano.elite, .header-demonio-del-frio.elite{
-    color: purple;
+.header-namekiano.elite, .header-demonio-del-frio.elite{
+    color: #a855f7;
 }
-.body-saiyan.elite, .body-namekiano.elite, .body-demonio-del-frio.elite{
-    border-color: purple;
-    color: rgb(174, 25, 174);
+.body-namekiano.elite, .body-demonio-del-frio.elite{
+    border-color: #a855f7;
+    color: #c084fc;
     text-align: center;
 }
-.imagen-saiyan.elite, .imagen-namekiano.elite, .imagen-demonio-del-frio.elite{
-    border-color: purple;
+.imagen-namekiano.elite, .imagen-demonio-del-frio.elite{
+    border-color: #a855f7;
    
 }
-.tipo-elite-saiyan, .tipo-elite-namekiano, .tipo-elite-namekiano{
-    background-color: purple;
+.tipo-elite-namekiano, .tipo-elite-namekiano{
+    background-color: #7e22ce;
     font-size: 18px;
-    border: 1px solid purple;
+    border: 1px solid #a855f7;
     padding: 3px;
 }
 .elite-span{
     text-decoration-line: underline;
     font-size: large;
 }
+/* --- PALETA EXCLUSIVA DE SAIYAN-ELITE PARA QUE SE LEA MEJOR*/
+.header-saiyan.elite{
+    color: #6d28d9;
+}
+.body-saiyan.elite{
+    border-color: #6d28d9;
+    color: #3c1872;
+    text-align: center;
+}
+.imagen-saiyan.elite{
+    border-color: #6d28d9;
+}
+.tipo-elite-saiyan{
+    background-color: #4c1d95;
+    font-size: 18px;
+    border: 1px solid #6d28d9;
+    padding: 3px;
+}
+
 
 
  /* ---------------------CARTAS GUERRERO ------------------- */
 
 .header-saiyan.guerrero{
-    color: blue;
+    color: #1e90ff;
 }
 .body-saiyan.guerrero{
-    border-color: blue;
-    color: rgb(76, 76, 235);
+    border-color: #1e90ff;
+    color: #60a5fa;
     text-align: center;
 }
 .imagen-saiyan.guerrero{
-    border-color: blue;
+    border-color: #1e90ff;
    
 }
 .tipo-guerrero-saiyan{
-    background-color: blue;
+    background-color: #1e3a8a;
     font-size: 18px;
-    border: 1px solid blue;
+    border: 1px solid #1e90ff;
     padding: 3px;
 }
 .guerrero-span{
     text-decoration-line: underline;
     font-size: large;
 }
+
+/* -------------CARTAS DIVINO------------------ */
+.header-saiyan.divino{
+    color: #00BFFF;
+}
+.body-saiyan.divino{
+    border-color: #00BFFF;
+    color: #00BFFF;
+    text-align: center;
+}
+.imagen-saiyan.divino{
+    border-color: #00BFFF;
+   
+}
+.tipo-divino-saiyan{
+    background-color: #00BFFF;
+    font-size: 18px;
+    border: 1px solid #00BFFF;
+    padding: 3px;
+}
+.divino-span{
+    text-decoration-line: underline;
+    font-size: large;
+}
+
+/* ------------  CARTAS DIOS ------------------- */
+.header-saiyan.dios{
+    color: #ff4500;
+}
+.body-saiyan.dios{
+    border-color: #ff4500;
+    color: #ffb199;
+    text-align: center;
+}
+.imagen-saiyan.dios{
+    border-color: #ff4500;
+   
+}
+.tipo-dios-saiyan{
+    background-color: #1e3a8a;
+    font-size: 18px;
+    border: 1px solid #ff4500;
+    padding: 3px;
+}
+.dios-span{
+    text-decoration-line: underline;
+    font-size: large;
+}
+
+/*------------------ CARTAS ANGEL -------------------  */
+.header-saiyan.angel{
+    color: #ffffff;
+}
+.body-saiyan.angel{
+    border-color: #ffffff;
+    color: #ffd700;
+    text-align: center;
+}
+.imagen-saiyan.angel{
+    border-color: #ffffff;
+   
+}
+.tipo-angel-saiyan{
+    background-color: #1e3a8a;
+    font-size: 18px;
+    border: 1px solid #ffffff;
+    padding: 3px;
+}
+.angel-span{
+    text-decoration-line: underline;
+    font-size: large;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
