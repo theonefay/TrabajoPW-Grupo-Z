@@ -1,0 +1,64 @@
+.body-index{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+/* ---------HEADER--------- */
+.header-index{
+    background: linear-gradient(#f9841e, #ffde0b);
+    width: 100%;
+    height: 50px;
+}
+.lista-header{
+    margin: 0;
+    padding: 15xp;
+}
+/* ------------MAIN------------- */
+main{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    background-color:#f9841e;
+    align-items: center;
+}
+.contenedor-cards{
+    justify-content: center;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: burlywood;
+    width: 80%;
+    height: auto;
+
+
+}
+
+/* -------------FOOTER----------------- */
+footer{
+    background-color: indianred;
+    width: 100%;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
