@@ -1,0 +1,46 @@
+.pagina-recuperar {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  
+ background-image: url("../img/Shenlong.jpg");
+
+  background-size: cover;       
+  background-position: center;   
+}
+
+.header-recuperar, .footer-recuperar {
+  background-color: rgba(235, 115, 11, 0.85); 
+  text-align: center;
+  padding: 10px;
+}
+
+.recuperar-contenedor {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-recuperar {
+  background-color: rgba(255, 255, 255, 0.85); 
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-recuperar {
+  background-color: orange;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-recuperar:hover {
+  background-color: darkorange;
+}

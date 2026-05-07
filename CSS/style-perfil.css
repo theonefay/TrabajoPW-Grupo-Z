@@ -1,0 +1,57 @@
+.pagina-perfil {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  /* Fondo Shenlong */
+  background-image: url("../img/Kamehouse.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.header-perfil, .footer-perfil {
+  background-color: rgba(235, 115, 11, 0.85); /* naranja semitransparente */
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.perfil-contenedor {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-usuario {
+  background-color: rgba(255, 255, 255, 0.85); 
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 320px;
+  box-shadow: 0px 0px 15px 5px #ff6600; 
+  border: 2px solid #ffcc00;            
+}
+
+.info-usuario h3 {
+  margin: 0;
+  color: rgb(211, 84, 0);;
+  
+}
+
+.info-usuario p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #000;
+}
+
+.info-usuario strong {
+  color: rgb(211, 84, 0);
+}
