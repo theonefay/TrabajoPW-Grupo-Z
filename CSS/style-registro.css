@@ -1,34 +1,269 @@
 /* PAGINA FORMULARIO-REGISTRO.HTML */
-body{
-    margin: 0%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-.pagina-formulario{
-    background-color: #f9841e;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    flex: 1;
-   
-}
-.header-form{
+/* -------------------------------- RESET -------------------------------- */
+
+*{
     margin: 0;
     padding: 0;
-    height: 100px;
-    width: 100%;
-    background-color: #00c40a;
-
+    box-sizing: border-box;
 }
-.form{
+
+/* -------------------------------- BODY -------------------------------- */
+
+body{
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    padding: 30px;
+
+    background-image: url("img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -------------------------------- CARD BASE -------------------------------- */
+
+.card{
+    width: clamp(180px, 20vw, 250px);
+
+    aspect-ratio: 1 / 2.5;
 
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: left;
-    background-color: red;
-    padding: 20px;
-    border-radius: 10%;
+
+    border-radius: 18px;
+    overflow: hidden;
+
+    border: 6px solid black;
+
+    transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+/* -------------------------------- HOVER -------------------------------- */
+
+.card:hover{
+     transform: scale(1.03);   /* hace que se mueva la img */
+}
+
+/* -------------------------------- HEADER -------------------------------- */
+
+.header-card{
+    height: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* -------------------------------- IMAGE -------------------------------- */
+
+.img-card{
+    height: 45%;
+}
+
+.img-card img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* -------------------------------- BODY CARD -------------------------------- */
+
+.body-card{
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 12px;
+}
+
+/* -------------------------------- DESCRIPTION -------------------------------- */
+
+.descripcion{
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* -------------------------------- STATS -------------------------------- */
+
+.stats{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 15px;
+
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* ======================================================================== */
+/* =============================== TIPOS ================================== */
+/* ======================================================================== */
+
+/* -------------------------------- SAIYAN -------------------------------- */
+
+.saiyan{
+    background:
+    linear-gradient(#ffb300, #ff6f00);
+
+    color: black;
+}
+
+.saiyan .header-card{
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* -------------------------------- VILLANO -------------------------------- */
+
+.villano{
+    background:
+    linear-gradient(#4a148c, #000);
+
+    color: white;
+}
+
+.villano .header-card{
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* -------------------------------- ANGEL -------------------------------- */
+
+.angel{
+    background:
+    linear-gradient(#dff6ff, #7dd3fc);
+
+    color: black;
+}
+
+.angel .header-card{
+    background-color: rgba(255,255,255,0.3);
+}
+
+/* -------------------------------- DIOS -------------------------------- */
+
+.dios{
+    background:
+    linear-gradient(#7f0000, #ff1744);
+
+    color: white;
+}
+
+.dios .header-card{
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* -------------------------------- ANDROIDE -------------------------------- */
+
+.androide{
+    background:
+    linear-gradient(#616161, #9e9e9e);
+
+    color: white;
+}
+
+.androide .header-card{
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* -------------------------------- NAMEK -------------------------------- */
+
+.namek{
+    background:
+    linear-gradient(#2e7d32, #81c784);
+
+    color: white;
+}
+
+.namek .header-card{
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* ======================================================================== */
+/* ============================== RAREZAS ================================= */
+/* ======================================================================== */
+
+/* -------------------------------- COMUN -------------------------------- */
+
+.comun{
+    box-shadow: 0 0 5px black;
+}
+
+/* -------------------------------- EPICA -------------------------------- */
+
+.epica{
+    box-shadow:
+    0 0 10px purple,
+    0 0 20px violet;
+}
+
+/* -------------------------------- LEGENDARIA -------------------------------- */
+
+.legendaria{
+    box-shadow:
+    0 0 10px gold,
+    0 0 20px orange,
+    0 0 35px yellow;
+}
+
+/* ======================================================================== */
+/* =========================== TRANSFORMACIONES ============================ */
+/* ======================================================================== */
+
+/* -------------------------------- SSJ -------------------------------- */
+
+.ssj .img-card img{
+    filter:
+    brightness(1.2)
+    saturate(1.4);
+}
+
+/* -------------------------------- ULTRA INSTINTO -------------------------------- */
+
+.ultra-instinto{
+    box-shadow:
+    0 0 10px white,
+    0 0 20px cyan,
+    0 0 35px lightblue;
+}
+
+/* -------------------------------- GOD MODE -------------------------------- */
+
+.god{
+    box-shadow:
+    0 0 10px red,
+    0 0 25px crimson;
+}
+
+/* ======================================================================== */
+/* ============================== RESPONSIVE =============================== */
+/* ======================================================================== */
+
+@media (max-width: 768px){
+
+    body{
+        background-attachment: scroll;
+    }
+
+    .card{
+        width: 180px;
+    }
 
 }

@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    background-color: rgba(208, 72, 23, 0.675);
+}
+.logo-header{
+    width: 50px;
+    height: 100%;
+}
+nav{
+    background-color: rgba(139, 0, 0, 0.718);
+    width: 100%;
+    display: flex;
+    padding: 5px;
+}
+.register ,.login, .album ,.perfil{
+    background-color: transparent;
+    border-right: 3px solid black;
+    text-align: center;
+    flex:1;
+}
+a{
+    color: orange;
+}
+.main-album{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.contenedor-card{
+    width: 80%;
+    min-height: 70vh;
+    background-color: rgba(255, 136, 0, 0.467);
+    flex: 1;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 4px solid rgb(245, 245, 13);
+}

@@ -1,423 +1,240 @@
-/* ----------------------------------------FORMATO BASICO DE LA CARTA--------------------------------------------------------------------- */
+/* CARTA */
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0;
+}
 .card{
+    margin: 50px;
+    width: clamp(170px,20vw,250px);
+    aspect-ratio: 1 / 2.5;
     display: flex;
     flex-direction: column;
-    height: auto;
-    width: 250px;
-    margin: 5px;
-    box-sizing: border-box;
+    border: 4px solid black;
+    border-radius: 5%;
+    overflow: hidden;
+    object-fit: cover;
+    justify-content: space-between;
 
+    position: relative;
 }
 .header-card{
     display: flex;
-    background-color: blue;
+    justify-content: space-between;
     width: 100%;
-    height:25px;
+    height: 8%;
+    box-sizing: border-box;
+    padding: 0 3px;
+    align-items: center;
+
+    position: relative;
+    z-index: 2;
+}
+.atributos{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-weight: bold;
+    padding: 2px 0;
+
+
+    position: relative;
+    z-index: 2;
+}
+/* CARTA PARTE DELANTERA */
+.img-card-fondo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    position: absolute;
+    z-index: 1;
+}
+.img-logo{
+    width: 80px;
+    height: 100%;
+}
+.footer-card{
+    text-align: center;
 }
 .nombre-card{
-    flex:1;
-    justify-content: center;
-    margin-left: 10px;
-    margin-top: 2px;
-}
-.logo-card{
-    height: 100%;
-    width: 70px;
-    margin: 0%;
-}
-.img-card{
-    background-color: green;
+    background-color: transparent;
+    height: 150px;
     width: 100%;
-    height: 250px;
-    border: 8px solid;
-    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    padding-top: 50px;
+    background-color: rgba(0, 0, 0, 0.514);
 }
-.img-tamaño{
-    width: 100%;
+.nombre-card span{
+    font-size: 13px;
+}
+/* CARTA PARTE TRASERA */
+.card-img{
+    height: 45%;
+    background-color: orangered;
+}
+.card-img img{
     height: 100%;
-    box-sizing: border-box;
+    width: 100%;
+    object-fit: cover; 
 }
-.body-card{
-    background-color: aqua;
-    border: 5px solid;
-    box-sizing: border-box;
+.card-body{
     flex: 1;
-}
-/* --------------------------------------------------------------------------------------------------------------------------------------- */
-/* ---------CARTA ANDROIDE-------- */
-.header-androide{
-    background-color: #7a0f0f;
-}
-.body-androide{
-    background-color: #c81e1e;
-    color: #f1f1f1;
-    font-family: arial;
-    padding: 7px 5px;
-    border-radius: 0 0 5% 5%;
-}
-/* ------------CARTA SAIYAN---------------- */
-.header-saiyan{
-    background-color: #b8860b;
-}
-.body-saiyan{
-    background-color: #e0a800;
-    color: #1a1a1a;
-    font-family: arial;
-    padding: 7px 5px;
-    border-radius: 0 0 5% 5%;
-}
-/* --------------CARTA NAMEKIANO--------------- */
-.header-namekiano{
-    background-color: #1f5f3a;
-}
-.body-namekiano{
-    background-color: #2e8b57;
-    color: #e8f5e9;
-    font-family: arial;
-    padding: 7px 5px;
-    border-radius: 0 0 5% 5%;
-}
-/* ---------CARTA DEMONIO DEL FRIO------------- */
-.header-demonio-del-frio{
-    background-color: #4b0082;
-}
-.body-demonio-del-frio{
-    background-color: #7b2cbf;
-    color: #f3e8ff;
-    font-family: arial;
-    padding: 7px 5px;
-    border-radius: 0 0 5% 5%;
-}
-/* -------CARTA DIOS---------- */
-.header-dios{
-    background-color: #ff4500;
-}
-.body-dios{
-    background-color: #ff4500;
-    color: #1a1a1a;
-    font-family: arial;
-    padding: 7px 5px;
-    border-radius: 0 0 5% 5%;
-}
-/* ------CARTA ANGEL---------- */
-.header-angel{
-    background-color: #e0f7ff;
-}
-.body-angel{
-    background-color: #e0f7ff;
-    color: #1a1a1a;
-    font-family: arial;
-    padding:7px 5px;
-    border-radius: 0 0 5% 5%;
-}
-/* -------- SOLDADO DE FREEZEER ---------- */
-.header-soldado-de-freezer{
-    background-color: #555555;
-}
-.body-soldado-de-freezer{
-    background-color: #555555;
-    color: #f0f0f0;
-    font-family: arial;
-    padding: 7px 5px;
-    border-radius: 0 0 5% 5%;
-}
-/* ------------ CARTA MAJIN ------------- */
-.header-majin{
-    background-color: #ff69b4;
-}
-.body-majin{
-    background-color: #ff69b4;
-    color: #f5e6d3;
-    font-family: arial;
-    padding: 7px 5px;
-    border-radius: 0 0 5% 5%;
-}
-/* --------- DEMONIO --------------- */
-.header-demonio{
-    background-color: #5a2a0c;
-}
-.body-demonio{
-    background-color: #5a2a0c;
-    color: #f5e6d3;
-    font-family: arial;
-    padding: 7px 5px;
-    border-radius: 0 0 5% 5%;
-
-}
-
-/* -----------------CARTAS LEGENDARIAS---------------------- */
-
-.header-androide.legendary, .header-saiyan.legendary{
-    color: #FFD700;
-}
-.body-androide.legendary, .body-saiyan.legendary{
-    border-color: #FFD700;
-    color: #FFD700;
-    text-align: center;
-}
-.imagen-androide.legendary, .imagen-saiyan.legendary{
-    border-color: #FFD700;
-}
-.tipo-legendary-androide, .tipo-legendary-saiyan{  
-    background-color: #b8860b;
-    font-size: 18px;
-    border: 1px solid #FFD700;
-    padding: 3px;
-}
-.legendary-span{
-    text-decoration-line: underline;
-    font-size: large;
-}
-
-/* ------------------CARTAS ELITES-------------------- */
-.header-namekiano.elite, .header-demonio-del-frio.elite{
-    color: #a855f7;
-}
-.body-namekiano.elite, .body-demonio-del-frio.elite{
-    border-color: #a855f7;
-    color: #c084fc;
-    text-align: center;
-}
-.imagen-namekiano.elite, .imagen-demonio-del-frio.elite{
-    border-color: #a855f7;
-   
-}
-.tipo-elite-namekiano, .tipo-elite-namekiano{
-    background-color: #7e22ce;
-    font-size: 18px;
-    border: 1px solid #a855f7;
-    padding: 3px;
-}
-.elite-span{
-    text-decoration-line: underline;
-    font-size: large;
-}
-/* --- PALETA EXCLUSIVA DE SAIYAN-ELITE PARA QUE SE LEA MEJOR*/
-.header-saiyan.elite{
-    color: #6d28d9;
-}
-.body-saiyan.elite{
-    border-color: #6d28d9;
-    color: #3c1872;
-    text-align: center;
-}
-.imagen-saiyan.elite{
-    border-color: #6d28d9;
-}
-.tipo-elite-saiyan{
-    background-color: #4c1d95;
-    font-size: 18px;
-    border: 1px solid #6d28d9;
-    padding: 3px;
-}
-
-
-
- /* ---------------------CARTAS GUERRERO ------------------- */
-
-.header-saiyan.guerrero{
-    color: #1e90ff;
-}
-.body-saiyan.guerrero{
-    border-color: #1e90ff;
-    color: #60a5fa;
-    text-align: center;
-}
-.imagen-saiyan.guerrero{
-    border-color: #1e90ff;
-   
-}
-.tipo-guerrero-saiyan{
-    background-color: #1e3a8a;
-    font-size: 18px;
-    border: 1px solid #1e90ff;
-    padding: 3px;
-}
-.guerrero-span{
-    text-decoration-line: underline;
-    font-size: large;
-}
-
-/* -------------CARTAS DIVINO------------------ */
-.header-saiyan.divino{
-    color: #00BFFF;
-}
-.body-saiyan.divino{
-    border-color: #00BFFF;
-    color: #00BFFF;
-    text-align: center;
-}
-.imagen-saiyan.divino{
-    border-color: #00BFFF;
-   
-}
-.tipo-divino-saiyan{
-    background-color: #00BFFF;
-    font-size: 18px;
-    border: 1px solid #00BFFF;
-    padding: 3px;
-}
-.divino-span{
-    text-decoration-line: underline;
-    font-size: large;
-}
-
-/* ------------  CARTAS DIOS ------------------- */
-.header-saiyan.dios{
-    color: #ff4500;
-}
-.body-saiyan.dios{
-    border-color: #ff4500;
-    color: #ffb199;
-    text-align: center;
-}
-.imagen-saiyan.dios{
-    border-color: #ff4500;
-   
-}
-.tipo-dios-saiyan{
-    background-color: #1e3a8a;
-    font-size: 18px;
-    border: 1px solid #ff4500;
-    padding: 3px;
-}
-.dios-span{
-    text-decoration-line: underline;
-    font-size: large;
-}
-
-/*------------------ CARTAS ANGEL -------------------  */
-.header-saiyan.angel{
-    color: #ffffff;
-}
-.body-saiyan.angel{
-    border-color: #ffffff;
-    color: #ffd700;
-    text-align: center;
-}
-.imagen-saiyan.angel{
-    border-color: #ffffff;
-   
-}
-.tipo-angel-saiyan{
-    background-color: #1e3a8a;
-    font-size: 18px;
-    border: 1px solid #ffffff;
-    padding: 3px;
-}
-.angel-span{
-    text-decoration-line: underline;
-    font-size: large;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
-}
- */
-
-
-
-
-
-
-
-/* .card{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    height: 380px;
-    width: 200px;
-}
-.card img{
-    width: 50%;
-    height: 50%;
-   
-}
-.card.saiyan{
-    background: linear-gradient(#ffde0b,#ff931f)
-
+    background-color: orange;
 }
 .descripcion{
-    text-align: center ;   
+    padding: 2px 10px;
+    flex:1;
+    text-align: justify;
 }
 
-.saiyan h2{
-    color: #ff931f;
-    
+/*---- -------------------ESTILOS----------------------------------- */
+/* LEGENDARY */
+.card.legendary{
+    box-shadow: 0 0 20px yellow,
+                0 0 20px gold,
+                0 0 20px orange;
 }
+.header-card.legendary{
+    background-color: rgba(252, 226, 28, 0.523);
+}
+.nombre-card.legendary h1{
+    color: yellow;
+    font-style: italic;
+}
+.nombre-card.legendary span{
+    color: yellow;
+}
+.atributos.legendary{
+    background-color: rgb(199, 130, 3);
+}
+/* EPICA */
+.card.epica{
+    box-shadow:0 0 20px blueviolet,
+    0 0 20px violet,
+    0 0 20px darkorchid;
+}
+.header-card.epica{
+    background-color: rgba(132, 34, 224, 0.562);
+}
+.nombre-card.epica h1{
+    color: rgb(207, 167, 244);
+}
+.nombre-card.epica span{
+    color: rgb(210, 167, 250);
+}
+.atributos.epica{
+    background-color: blueviolet;
+}
+/* GUERRERO */
+.card.guerrero{
+    box-shadow: 0 0 20px blue,
+                0 0 20px rgb(10, 10, 175),
+                0 0 20px rgb(82, 111, 205);
+}
+.header-card.guerrero{
+    background-color: rgba(0, 0, 255, 0.468);
+}
+.nombre-card.guerrero h1{
+    color: rgb(43, 43, 255);
+}
+.nombre-card.guerrero span{
+    color: rgb(61, 61, 218);
+}
+.atributos.guerrero{
+    background-color: blue;
+}
+/* DIVINO */
+.card.divino{
+    box-shadow: 0 0 20px rgb(18, 144, 138),
+                0 0 20px rgb(20, 236, 182),
+                0 0 20px rgb(31, 94, 183) ;
+}
+.header-card.divino{
+    background-color: rgba(30, 221, 235, 0.612);
+}
+.nombre-card.divino h1{
+    color: rgb(61, 244, 198);
+}
+.nombre-card.divino span{
+    color: rgb(62, 255, 207);
+}
+.atributos.divino{
+    background-color: rgb(41, 202, 234);
+}
+/* ANGEL */
+.card.angel{
+    box-shadow: 0 0 20px white,
+                0 0 20px white,
+                0 0 20px white;
+}
+.header-card.angel{
+    background-color: rgba(255, 255, 255, 0.832);
+}
+.nombre-card.angel h1{
+    color: rgb(249, 227, 227);
+}
+.nombre-card.angel span{
+    color: rgb(250, 235, 235);
+}
+.atributos.angel{
+    background-color: white;
+}
+/* DIOS */
+.card.dios{
+    box-shadow: 0 0 20px red,
+                0 0 20px orangered,
+                0 0 20px darkred;
+}
+.header-card.dios{
+    background-color: orangered;
+}
+.nombre-card.dios h1{
+    color: rgb(243, 86, 29);
+}
+.nombre-card.dios span{
+    color: rgb(251, 83, 22);
+}
+.atributos.dios{
+    background-color: orangered;
+}
+/* NAMEKIANO */
 .card.namekiano{
-    background-color: #5bea08;
+    box-shadow: 0 0 20px green,
+                0 0 20px greenyellow,
+                0 0 20px lightgreen;
 }
-.namekiano h2{
-    color: #00c40a;
+.header-card.namekiano{
+    background-color: rgba(12, 247, 12, 0.648);
 }
-.card.demonio-del-frio{
-    background-color: purple;
+.nombre-card.namekiano h1{
+    color: rgb(10, 232, 10);
 }
-.card.androide{
-    background-color: rgb(255, 27, 27);
+.nombre-card.namekiano span{
+    color: rgb(10, 232, 10);
 }
-.card.header-androide{
-    background-color: darkred;
-    margin: 0;
-    width: 100%;
-    height: 10%;
-    text-align: center;
-} */
+.atributos.namekiano{
+    background-color: rgb(16, 183, 16);
+}
+/* MAJIN */
+.card.majin{
+    box-shadow: 0 0 30px rgb(240, 35, 69),
+                0 0 30px rgb(229, 41, 104),
+                0 0 30px rgb(215, 54, 215);
+}
+.header-card.majin{
+    background-color: rgba(229, 41, 104, 0.611);
+}
+.nombre-card.majin h1{
+    color: rgb(239, 32, 101);
+}
+.nombre-card.majin span{
+    color: rgb(253, 32, 106);
+}
+.atributos.majin{
+    background-color: palevioletred;
+}
+
