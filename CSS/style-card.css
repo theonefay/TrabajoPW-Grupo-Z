@@ -17,7 +17,11 @@
     justify-content: space-between;
 
     position: relative;
+
 }
+/* .card:hover{
+     transform: scale(1.06);  
+}  */
 .header-card{
     display: flex;
     justify-content: space-between;
@@ -77,18 +81,22 @@
 .card-img img{
     height: 100%;
     width: 100%;
-    object-fit: cover; 
+    object-fit: cover;
+    border-top: 3.5px solid black;
+ 
 }
 .card-body{
     flex: 1;
     display: flex;
     flex-direction: column;
-    background-color: orange;
+    border-top: 3.5px solid black;
+
 }
 .descripcion{
-    padding: 2px 10px;
     flex:1;
     text-align: justify;
+    object-fit: cover;
+    padding: 10px 10px;
 }
 
 /*---- -------------------ESTILOS----------------------------------- */
@@ -111,6 +119,9 @@
 .atributos.legendary{
     background-color: rgb(199, 130, 3);
 }
+.card-body.legendary{
+    background-color: orange;
+}
 /* EPICA */
 .card.epica{
     box-shadow:0 0 20px blueviolet,
@@ -128,6 +139,9 @@
 }
 .atributos.epica{
     background-color: blueviolet;
+}
+.card-body.epica{
+    background-color: rgb(160, 16, 222);
 }
 /* GUERRERO */
 .card.guerrero{
@@ -165,6 +179,9 @@
 .atributos.divino{
     background-color: rgb(41, 202, 234);
 }
+.card-body.divino{
+    background-color: rgba(30, 221, 235, 0.612);
+}
 /* ANGEL */
 .card.angel{
     box-shadow: 0 0 20px white,
@@ -190,16 +207,19 @@
                 0 0 20px darkred;
 }
 .header-card.dios{
-    background-color: orangered;
+    background-color: rgb(236, 29, 29);
 }
 .nombre-card.dios h1{
-    color: rgb(243, 86, 29);
+    color: rgb(245, 53, 53);
 }
 .nombre-card.dios span{
-    color: rgb(251, 83, 22);
+    color: rgb(218, 45, 45);
 }
 .atributos.dios{
-    background-color: orangered;
+    background-color: rgb(130, 2, 2);
+}
+.card-body.dios{
+    background-color: rgb(241, 22, 22);
 }
 /* NAMEKIANO */
 .card.namekiano{
@@ -218,6 +238,9 @@
 }
 .atributos.namekiano{
     background-color: rgb(16, 183, 16);
+}
+.card-body.namekiano{
+    background-color: rgba(12, 247, 12, 0.648) ;
 }
 /* MAJIN */
 .card.majin{
