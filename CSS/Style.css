@@ -7,11 +7,21 @@
 .header-index{
     background: linear-gradient(#f9841e, #ffde0b);
     width: 100%;
-    height: 50px;
+    height: auto;
 }
-.lista-header{
-    margin: 0;
-    padding: 15xp;
+.items-navbar{
+    margin: 0 9vw;
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100%;
+}
+.items-navbar li {
+    padding: 0.8em;
+}
+.items-navbar li a {
+    text-decoration: none;
 }
 /* ------------MAIN------------- */
 main{
