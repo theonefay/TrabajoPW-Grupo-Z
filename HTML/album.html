@@ -7,31 +7,49 @@
 
     <link rel="stylesheet" href="../CSS/style-album.css">
     <link rel="stylesheet" href="../CSS/style-card.css">
+
+    <!-- TIPOGRAFIA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     
     <title>ALBUM</title>
 </head>
 <body>
     <header>
-        <div class="div-header">
-            <a href="Index.html"><img src="../img/esfera.png" alt="logo" class="logo-header"></a>
-        </div>
-        <nav>
-            <div class="login">
-                <a href="login.html">LOGIN</a>
+        <nav class="barra-nav">
+            <div class="logo">
+                <a href="../HTML/Index.html"><img src="../img/esfera.png" alt="logo dragon ball"></a>
             </div>
-            <div class="register">
-                <a href="formulario-registro.html">REGISTER</a>
-            </div>
-            <div class="album">
-                <a href="prueba-album.html">ALBUM</a>
-            </div>
-            <div class="perfil">
-                <a href="perfil.html">PERFIL</a>
-            </div>
-        </nav>
+        <ul class="nav-links">
+            <li>
+                <a href="#">LOGIN</a>
+            </li>
+            <li>
+                <a href="#">REGISTER</a>
+            </li>
+            <li>
+                <a href="#" class="activo">ALBUM</a>
+            </li>
+            <li>
+                <a href="#">PERFIL</a>
+            </li>
+        </ul>
+    </nav>
     </header>
     <main class="main-album">
-        <div class="contenedor-card">
+        <fieldset class="contenedor-card">
+            <legend class="titulo-album">ALBUM</legend>
+            
             <!----- GOKU ------->
             <article class="card legendary">
                 <img src="../img/goku-fondo.jpg" alt="GOKU" class="img-card-fondo">
@@ -44,7 +62,7 @@
                         <h1>GOKU</h1>
                         <span>SAIYAJIN</span>
                     </div>
-                    <div class="atributos">
+                    <div class="atributos legendary">
                         <span>ATK: 9500</span>
                         <span>DEF: 3700</span>
                      </div>
@@ -124,7 +142,7 @@
             </article>
             <!------ BILLS --------->
             <article class="card dios">
-                <img src="../img/bills.jpg" alt="BEERUS" class="img-card-fondo">
+                <img src="../img/bills2.jpg" alt="BEERUS" class="img-card-fondo">
                 <div class="header-card dios">
                     <h4>DIOS</h4>
                     <img src="../img/logo-rastreador.png" class="img-logo">
@@ -382,7 +400,7 @@
                     <img src="../img/logo-rastreador.png" class="img-logo">
                 </div>
                 <div class="footer-card">
-                    <div class="nombre-card legendary">
+                    <div class="nombre-card legendary" id="gohanfuturo-name">
                         <h1>GOHAN DEL FUTURO</h1>
                         <span>SAIYAN</span>
                     </div>
@@ -464,10 +482,10 @@
                      </div>
                 </div>
             </article>
-        </div>
+        </fieldset>
     </main>
     <footer>
-        
+       © 2025 UNLaM. Derechos reservados 
     </footer>
 </body>
 </html>
