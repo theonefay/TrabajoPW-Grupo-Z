@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ----------- HEADER ----------- */
+header{
+    background-color: rgba(0, 0, 0, 0.441);
+}
+/* NAVBAR */
+.barra-nav{
+    width: 95%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 25px;
+    background: rgba(80, 0, 0, 0.65);
+    border: 2px solid rgba(255, 166, 0, 0.7);
+    box-shadow: 0 0 20px rgba(255, 166, 0, 0.4);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: 1000;
+}
+/* LOGO */
+.logo img{
+    width: 70px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow:0 0 15px orange;
+}
+/* LINKS */
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+/* ITEMS */
+.nav-links li{
+    padding-right: 30px;
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
+/* LINKS */
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+/* HOVER */
+.nav-links a:hover{
+    color: gold;
+    text-shadow:0 0 10px gold;
+    transform: translateY(-2px);
+}
+/* LINK ACTIVO */
+.activo{
+    color: gold;
+    border-bottom: 3px solid gold;
+    padding-bottom: 5px;
+    text-shadow: 0 0 10px gold;
+}
+/* -------- MAIN PERFIL -------- */
+.main-perfil{
+    padding-top: 150px;
+    min-height: 100vh;
+    background-image: url(../img/fondo3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+/* CONTENEDOR PRINCIPAL */
+.contenedor-principal{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+/* PERFIL */
+.contenedor-perfil{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto auto;
+    background-color: rgba(0, 0, 0, 0.677);
+    border: 3px solid orange;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:0 0 20px rgba(255,166,0,0.4);
+}
+.foto{
+    grid-row: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background-color: rgba(0,0,0,0.3);
+}
+/* CIRCULO FOTO */
+.foto-perfil{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: green;
+    border: 4px solid orange;
+    box-shadow: 0 0 15px orange;
+}
+/* DESCRIPCION */
+.descripcion-perfil{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+.nombre-usuario{
+    color: rgba(255, 166, 0, 0.882);
+    font-size: 25px;
+    font-weight: bolder;
+}
+.descripcion-perfil p {
+    color: rgba(208, 204, 204, 0.979);
+    font-style: italic;
+} 
+.descripcion-perfil.descripcion-usuario{
+    color: rgb(221, 221, 221);    
+}
+/* INFO */
+.info-perfil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: rgba(255,255,255,0.05);
+    color: gold;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* CAJAS ABAJO */
+.perfil-part2{
+    background-color: rgba(0,0,0,0.6);
+    border: 3px solid orange;
+    border-radius: 20px;
+    min-height: 250px;
+    color: white;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.nav-card{
+    background-color: rgba(68, 67, 67, 0.488);
+    color: white;
+    padding: 20px;
+    border-bottom: 2px solid rgb(69, 69, 68);
+    text-align: center;
+
+}
+.nav-card:hover{
+    color: gold;
+    border-bottom: 2px solid gold;
+}
+.contenedor-cartas-obtenidas{
+    background-color: rgba(0,0,0,0.6);
+    /* border: 3px solid orange; */
+    min-height: 250px;
+    color: white;
+    padding: 30px;
+    grid-column: 1 / 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

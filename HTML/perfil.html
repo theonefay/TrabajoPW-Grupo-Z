@@ -3,9 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="../img/esfera.png">
+    <link rel="stylesheet" href="../CSS/style-perfil.css">
+    <link rel="stylesheet" href="../CSS/style-card.css">
+
+    <title>PERFIL</title>
 </head>
 <body>
-    
+    <header>
+         <nav class="barra-nav">
+            <div class="logo">
+                <a href="../HTML/Index.html"><img src="../img/esfera.png" alt="logo dragon ball"></a>
+            </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">LOGIN</a>
+            </li>
+            <li>
+                <a href="#">REGISTER</a>
+            </li>
+            <li>
+                <a href="#">ALBUM</a>
+            </li>
+            <li>
+                <a href="#" class="activo">PERFIL</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    <!-- MAIN -->
+    <main class="main-perfil">
+        <div class="contenedor-principal">
+            <div class="contenedor-perfil" >
+                <div class="foto div2">
+                    <img src="/img/gohan-bestia.jpg" alt="" class="foto-perfil">
+                </div>
+                <div class="descripcion-perfil div2">
+                    <span class="nombre-usuario">NOMBRE USUARIO</span>
+                    <p>Mini descripcion del usuario</p>
+                    <span class="descripcion-usuario">Miembro desde: DD/MM/AA</span>
+                    <span class="descripcion-usuario">Ubicacion: ARGENTINA</span>
+                </div>
+                <div class="info-perfil div2">
+                    <span>cartas encontradas</span>
+                    <span><a href="">EDITAR PERFIL</a></span>
+                </div>
+            </div>
+            <div class="perfil-part2">
+                <div class="nav-card">
+                    <span>TODAS MIS CARTAS</span>
+                </div>
+                <div class="nav-card">
+                    <span>FAVORITOS</span>
+                </div>
+                <div class="contenedor-cartas-obtenidas"> 
+                     <!--------- CELL ------------->
+            <article class="card legendary">
+                <img src="../img/cell.jpg" alt="CELL" class="img-card-fondo">
+                <div class="header-card legendary">
+                    <h4>LEGENDARY</h4>
+                    <img src="../img/logo-patrulla-roja.png" class="img-logo">
+                </div>
+                <div class="footer-card">
+                    <div class="nombre-card legendary">
+                        <h1>CELL PERFECTO</h1>
+                        <span>BIO-ANDROIDE</span>
+                    </div>
+                    <div class="atributos legendary">
+                        <span>ATK: 9500</span>
+                        <span>DEF: 3700</span>
+                     </div>
+                </div>
+            </article>
+            <!---------- GOHAN SSJ2 ----------->
+            <article class="card legendary">
+                <img src="../img/gohanssj2.jpg" alt="GOHAN SSJ2" class="img-card-fondo">
+                <div class="header-card legendary">
+                    <h4>LEGENDARY</h4>
+                    <img src="../img/logo-rastreador.png" class="img-logo">
+                </div>
+                <div class="footer-card">
+                    <div class="nombre-card legendary">
+                        <h1>GOHAN SSJ2</h1>
+                        <span>SAIYAN</span>
+                    </div>
+                    <div class="atributos legendary">
+                        <span>ATK: 9500</span>
+                        <span>DEF: 3700</span>
+                     </div>
+                </div>
+            </article>
+            <!------- GOKU SSJ GOD ------->
+            <article class="card dios">
+                <img src="../img/gokussjgod.jpg" alt="BEERUS" class="img-card-fondo">
+                <div class="header-card dios">
+                    <h4>DIOS</h4>
+                    <img src="../img/logo-rastreador.png" class="img-logo">
+                </div>
+                <div class="footer-card">
+                    <div class="nombre-card dios">
+                        <h1>GOKU</h1>
+                        <span>SAIYAN DIOS</span>
+                    </div>
+                    <div class="atributos dios">
+                        <span>ATK: 9500</span>
+                        <span>DEF: 3700</span>
+                     </div>
+                </div>
+            </article>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
