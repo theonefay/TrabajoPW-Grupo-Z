@@ -14,12 +14,19 @@
     <header class="header-index">
         <section>
             <nav>
-                <ul class="items-navbar">
+                <img src="img/logo-dbz.png" alt="logo">
+                <ul class="navbar">
                     <li>
-                        <a href="formulario-registro.html">Registro</a>
+                        <a href="index.html" id="seleccionado" >Inicio</a>
                     </li>
                     <li>
-                        <a href="login.html">Login</a>
+                        <a href="perfil.html" id="link-perfil">Perfil</a>
+                    </li>
+                    <li>
+                        <a href="formulario-registro.html">Registrarse</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Iniciar sesión</a>
                     </li>
                 </ul>
             </nav>
@@ -27,33 +34,176 @@
     </header>
     <!---------        MAIN       ------------> 
     <main>
-        <section id="landing">
-            <h1 id="texto-landing">¡ENCUENTRA TUS PERSONAJES FAVORITOS DE DRAGON BALL Z Y CREA UNA BARAJA CON ELLOS!</h1>
+        <!-- <section id="landing">
+            <h1 id="texto-landing">
+                ¡ENCUENTRA TUS PERSONAJES FAVORITOS DE DRAGON BALL Z Y CREA UNA BARAJA CON ELLOS!
+            </h1>
             <button id="boton-landing">COMENZAR</button>
-        </section>
-        <section id="baraja-personal">
-            <span>Nivel de poder</span>
-            <span>Sinergias activas</span>
-            <article class="carta-favorita">
-            </article>
-        </section>
+        </section> -->
+        
+        
+        <menu id="menu-filtro-cartas">
+            <label for="select-raza" class="label">Raza</label>
+            <select name="select-raza" class="select raza">
+                <button><selectedcontent></selectedcontent></button>
+                <option value="none">Todas</option>
+                <option value="namekianos">Namekianos</option>
+                <option value="terricolas">Terricolas</option>
+                <option value="saiyans">Saiyans</option>
+                <option value="androides">Androides</option>
+                <option value="demonio-frio">Demonios del frio</option>
+                <option value="fusion">Fusiones</option>
+            </select>
+            
+            <label for="select-faccion" class="label">Facción</label>
+            <select name="select-faccion" class="select faccion">
+                <button><selectedcontent></selectedcontent></button>
+                <option value="none">Todas</option>
+                <option value="guerreros-z">Guerrero Z</option>
+                <option value="patrulla-roja">Patrulla Roja</option>
+                <option value="imperio-freezer">Imperio de Freezer</option>
+            </select>
+            
+            <label for="select-rareza" class="label">Rareza</label>
+            <select name="select-rareza" class="select rareza">
+                <button><selectedcontent></selectedcontent></button>
+                <option value="none">Todas</option>
+                <option value="comun">Comúnes</option>
+                <option value="rara">Raras</option>
+                <option value="epicas">Épicas</option>
+                <option value="legendarias">Legendarias</option>
+            </select>
+        </menu>
+
         <section class="contenedor-cards">
             <!------------------------  GOKU -------------------------->
-           <article class="card">
-                <div class="header-card header-saiyan elite">
-                    <div class="nombre-card">GOKU</div>
-                    <div class="logo-card"><img src="img/logo-patrulla-roja.png"class="logo-card"></div>
-                </div>
-                <div class="img-card imagen-saiyan elite">
-                     <img src="img/goku.png" alt="perfil-cell" class="img-tamaño">
-                </div>
-                <div class="body-card body-saiyan elite">
-                     <span class="elite-span">SAIYAN</span>
-                     <p>Bioandroide creado para alcanzar la perfección. Posee las células de guerreros como Freezer, King Cold, Goku, Vegeta y Piccolo, lo que le permite utilizar sus técnicas y aumentar su poder constantemente. Su objetivo es convertirse en el ser perfecto.</p>
-                     <strong class="tipo-elite-saiyan">ELITE</strong>
-                </div>
+            <article class="card">
+                <h4>Gokú</h4>
+                <img src="img/perfil-goku.jpg" alt="Goku">
+                <ul>
+                    <li>Saiyan</li>
+                    <li>Guerrero Z</li>
+                    <li>Épico</li>
+                </ul>
             </article>
-            <!----------------------- VEGETA -------------------------->
+            <article class="card">
+                <h4>Gohan</h4>
+                <img src="img/perfil-gohan.jpg" alt="Gohan">
+                <ul>
+                    <li>Saiyan</li>
+                    <li>Terrícola</li>
+                    <li>Guerrero Z</li>
+                    <li>Raro</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h4>Vegeta</h4>
+                <img src="img/perfil-vegeta.jpg" alt="Vegeta">
+                <ul>
+                    <li>Saiyan</li>
+                    <li>Guerrero Z</li>
+                    <li>Épico</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h4>Piccolo</h4>
+                <img src="img/perfil-piccolo.jpg" alt="Piccolo">
+                <ul>
+                    <li>Namekiano</li>
+                    <li>Guerrero Z</li>
+                    <li>Raro</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h4>Freezer</h4>
+                <img src="img/perfil-freezer.jpg" alt="Freezer">
+                <ul>
+                    <li>Demonio del frio</li>
+                    <li>Imperio de Freezer</li>
+                    <li>Épico</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h4>Cell</h4>
+                <img src="img/perfil-cell.jpg" alt="Cell">
+                <ul>
+                    <li>Androide</li>
+                    <li>Saiyan</li>
+                    <li>Namekiano</li>
+                    <li>Terrícola</li>
+                    <li>Patrulla roja</li>
+                    <li>Épico</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h4>Trunks</h4>
+                <img src="img/esfera-1-estrella.webp" alt="Favorito" class="favorito-img">
+                <img src="img/perfil-trunks.jpg" alt="Trunks">
+                <ul>
+                    <li>Terrícola</li>
+                    <li>Saiyan</li>
+                    <li>Guerrero Z</li>
+                    <li>Raro</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h4>Androide 18</h4>
+                <img src="img/perfil-androide-18.webp" alt="Androide18">
+                <ul>
+                    <li>Androide</li>
+                    <li>Terrícola</li>
+                    <li>Patrulla roja</li>
+                    <li>Guerrero Z</li>
+                    <li>Raro</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h4>Goten</h4>
+                <img src="img/perfil-goten.jpg" alt="Goten">
+                <ul>
+                    <li>Terrícola</li>
+                    <li>Saiyan</li>
+                    <li>Guerrero Z</li>
+                    <li>Común</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h4>Gogeta</h4>
+                <img src="img/perfil-gogeta.jpg" alt="Gogeta">
+                <ul>
+                    <li>Fusión</li>
+                    <li>Saiyan</li>
+                    <li>Guerrero Z</li>
+                    <li>Legendario</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h4>Cooler</h4>
+                <img src="img/perfil-cooler.jpg" alt="Cooler">
+                <ul>
+                    <li>Demonio del frio</li>
+                    <li>Imperio de Freezer</li>
+                    <li>Épico</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h4>Vegito</h4>
+                <img src="img/perfil-vegito.jpg" alt="Vegito">
+                <ul>
+                    <li>Fusión</li>
+                    <li>Saiyan</li>
+                    <li>Guerrero Z</li>
+                    <li>Legendario</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h4>Shenlong</h4>
+                <img src="img/perfil-shenlong.jpg" alt="Shenlong">
+                <ul>
+                    <li>Legendario</li>
+                </ul>
+            </article>
+            <!-- !----------------------- VEGETA --------------------------
              <article class="card">
                 <div class="header-card header-saiyan elite">
                     <div class="nombre-card elite">VEGETA</div>
@@ -68,7 +218,7 @@
                      <strong class="tipo-elite-saiyan">ELITE</strong>
                 </div>
             </article>
-            <!----------------------- GOHAN ----------------------------->
+            <!----------------------- GOHAN -----------------------------
              <article class="card">
                 <div class="header-card header-saiyan guerrero">
                     <div class="nombre-card guerrero">GOHAN</div>
@@ -83,7 +233,7 @@
                      <strong class="tipo-guerrero-saiyan">GUERRERO</strong>
                 </div>
             </article>
-            <!------------------- FREEZER -------------------->
+            <!------------------- FREEZER --------------------
             <article class="card">
                 <div class="header-card header-demonio-del-frio elite">
                     <div class="nombre-card elite">FREEZER</div>
@@ -98,7 +248,7 @@
                      <strong class="tipo-elite">ELITE</strong>
                 </div>
             </article>
-            <!------------------ CELL ------------------------>
+            <!------------------ CELL ------------------------
             <article class="card">
                 <div class="header-card header-androide legendary">
                     <div class="nombre-card legendary">CELL</div>
@@ -112,7 +262,7 @@
                      <p>Bioandroide creado para alcanzar la perfección. Posee las células de guerreros como Freezer, King Cold, Goku, Vegeta y Piccolo, lo que le permite utilizar sus técnicas y aumentar su poder constantemente. Su objetivo es convertirse en el ser perfecto.</p>
                      <strong class="tipo-legendary-androide">LEGENDARY</strong>
                 </div>
-                <!----------- PICCOLO ------------->
+                <!----------- PICCOLO -------------
             </article>
             <article class="card">
                 <div class="header-card header-namekiano elite">
@@ -128,7 +278,7 @@
                      <strong class="tipo-elite-namekiano">ELITE</strong>
                 </div>
             </article>
-            <!------------------  ------------------------->
+            <!------------------  -------------------------
             </article>
             <article class="card">
                 <div class="header-card header-namekiano elite">
@@ -144,7 +294,7 @@
                      <strong class="tipo-elite-namekiano">ELITE</strong>
                 </div>
             </article>
-            <!--------------------------------- GOHAN SSJ2 ------------------------------------>
+            <!--------------------------------- GOHAN SSJ2 ------------------------------------
             </article>
             <article class="card">
                 <div class="header-card header-saiyan legendary">
@@ -159,12 +309,24 @@
                      <p>Bioandroide creado para alcanzar la perfección. Posee las células de guerreros como Freezer, King Cold, Goku, Vegeta y Piccolo, lo que le permite utilizar sus técnicas y aumentar su poder constantemente. Su objetivo es convertirse en el ser perfecto.</p>
                      <strong class="tipo-legendary-saiyan">ELITE</strong>
                 </div>
-            </article>
+            </article> -->
         </section>
     </main>
     <!---------        FOOTER      ------------> 
     <footer>
-        <p>&copy; 2026 Dev Skills Deck. Todos los derechos reservados.</p>
+        <img src="img/logo-dbz.png" alt="logo">
+        <div id="wrapper-redes">
+            <h4>Nuestras redes</h4>
+            <a href="https:\\www.instagram.com"><img src="img/instagram-icon.png" alt="Instagram">@dragonballproyect</a>
+            <a href="https:\\www.x.com"><img src="img/twitter-icon.png" alt="Twitter">@dbproyect</a>
+            <a href="https:\\www.youtube.com"><img src="img/youtube-icon.png" alt="Youtube">@dragonballproy</a>
+        </div>
+        <div id="wrapper-miscelaneos">
+            <a href=""><img src="img/external-link.png" alt="">Contáctanos</a>
+            <a href=""><img src="img/external-link.png" alt="">Ayuda</a>
+            <a href=""><img src="img/external-link.png" alt="">Preguntas frecuentes</a>
+        </div>
+
     </footer>
 </body>
 </html>
