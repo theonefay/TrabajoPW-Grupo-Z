@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./CSS/style-registro.css">
+    <link rel="icon" href="/img/esfera.png" type="image/png">
+</head>
+
+<body>
+    <header class="cotenedor-nav">
+        <nav class="barra-nav">
+            <div class="icono-inicio">
+                <a href="./Index.html">
+                    <img src="./img/esfera.png" alt="" width="30">
+                </a>
+            </div>
+            <ul>
+                <li><a href="#">Albun</a></li>
+                <li><a href="./login.html">Volver</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form class="formulario">
+            <h2>Crear una cuenta</h2>
+            <label for="nombre_usuario">Nombre de Usuario</label>
+            <input type="text" id="nombre_usuario" class="campo" required>
+
+            <label for="correo">Correo electronico</label>
+            <input type="text" id="correo" class="campo" required>
+
+            <label for="contrasenia">Contraseña</label>
+            <input type="text" id="contrasenia" class="campo" required>
+
+            <button type="submit" class="boton-crear-cuenta"><a href="./login.html">Crear cuenta</a></button>
+        </form>
+    </main>
+</body>
+
+</html>

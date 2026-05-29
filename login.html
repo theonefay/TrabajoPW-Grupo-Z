@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/CSS/style-login.css">
+    <link rel="icon" href="/img/esfera.png" type="image/png">
+</head>
+
+<body>
+    <header class="cotenedor-nav">
+        <nav class="barra-nav">
+            <div class="icono-inicio">
+                <a href="./Index.html">
+                    <img src="./img/esfera.png" alt="" width="30">
+                </a>
+            </div>
+            <ul>
+                <li><a href="#">Albun</a></li>
+                <li><a href="./login.html">Volver</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="formulario">
+            <h2>Ingresa a tu cuenta</h2>
+
+            <label for="campo-usuario">Usuario</label>
+            <input class="campo" type="text" placeholder="" id="campo-usuario" required>
+
+            <label for="campo-contraseña">Contraseña</label>
+            <input class="campo" type="password" placeholder="" id="campo-contraseña" required>
+
+            <p id="recuperar-contrasenia">¿Olvidaste tu contraseña?
+                <a href="./recuperar-contrasenia.html">Clic aqui</a>
+            </p>
+
+            <button type="submit">Iniciar sesión</button>
+            
+            <p id="registrarse">¿No tienes una cuenta?
+                <a href="./formulario-registro.html">Registrate</a>
+            </p>
+        </form>
+    </main>
+</body>
+</html>
