@@ -41,8 +41,9 @@
 }
 .contenedor-cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 15rem);
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 15rem);/*repeat() con auto-fit permite repetir la cantidad de columnas que entren en el ancho total de la pantalla,  y 15rem es el mismo tamaño que la carta*/
+    justify-content: center; /*para que el contenedor este centrado*/
+    /*para que los items esten centrados dentro de su espacio individual*/
     align-items: center;
     justify-items: center;
     gap: 3rem;
@@ -53,76 +54,72 @@
     margin-right: 10%;
     margin-left: 10%;
 }
-#menu-filtro-cartas {
+#menu-filtro-cartas {/*wrapper donde se situan los select de raza, faccion y rareza, junto con sus labels*/
     max-width: 100%;
-    margin: 2rem 10%;
+    margin: 2rem 0;/*margin arriba y abajo*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-auto-flow: column;
-    justify-content: start;
-    justify-self: center;
+    justify-items: start;
+    justify-self: center; /*para que el wrapper esté en el medio*/
     gap: 1em;
 }
-.label {
-    padding-left: 1rem;
+#menu-filtro-cartas .label { 
+    padding-left: 1rem;/*para que este alineado con el texto del select (debe haber una mejor forma de hacerlo)*/
     text-align: left;
-    align-content: end;
+    align-content: end;  /*para que esté pegado al select*/
     color: white;
 }
 
-.select {
+#menu-filtro-cartas .select {
+    min-width: 13rem;
+    cursor: pointer; /*para mostrar que se puede interactuar con él*/
+    
     font-size: medium;
     padding: 1rem;
     background-color: #1E90FF;
     color: white;
-    border: none;
     border-radius: 1rem;
-    outline: none;
-    min-width: 15rem;
-    cursor: pointer;
 }
 
-.select:hover {
+#menu-filtro-cartas .select:hover {
     background-color: #3d9eff;
 }
-.select selectedcontent {
+#menu-filtro-cartas .select selectedcontent {
     color: white;
 }
 
-.select option {
-    border: none;
-    outline: none;
+#menu-filtro-cartas .select option {
     background-color: azure;
-    padding: 1rem;
 }
 
-option:checked {
+#menu-filtro-cartas .select option:checked {
     background-color: #FFA500;
 }
 
-.select:open {
-    border-radius: 1rem 1rem 0 0;
+#menu-filtro-cartas .select:open {
+    border-radius: 1rem 1rem 0 0;/*quita el redondeado del borde en la parte baja para que coincida con la lista desplegable*/
 }
 
 
-@media (max-width: 50em){
+@media (max-width: 50em){/*cambios para celular*/
     #menu-filtro-cartas {
         max-width: 90%;
         margin: 2rem 10%;
+
         display: grid;
         grid-template-columns: 1fr ;
         grid-auto-rows: 1fr;
-        grid-auto-flow: row;
+        grid-auto-flow: row;/*sobreescribir el flow del grid para que los items se pongan siempre en una fila nueva en vez de una columna*/
         justify-self: center;
         gap: 1em;
     }
     .contenedor-cards {
-        margin: 3rem 0 0 0;
+        margin: 3rem 0 0 0;/*pseudo reset del margin*/
         width: 90%;
+
         justify-self: center;
-        justify-content: center;
         grid-template-columns: repeat(auto-fit, max-content);
-        
     }
 }

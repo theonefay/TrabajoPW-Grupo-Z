@@ -1,67 +1,61 @@
 /* ----------------------------------------FORMATO BASICO DE LA CARTA--------------------------------------------------------------------- */
-.card{
-    display: grid;
+.card{ 
+    display: grid; /*grid para superposicionar elementos*/
     grid-template-columns: 1fr;
-    grid-template-rows: min-content min-content;
-    max-height: 100%;
+    grid-template-rows: 1fr;
     width: 15rem;
-    aspect-ratio: 5 / 9;
 
     border-radius: 1rem;
     box-shadow: .3rem .3rem 1rem black;
+    background-color: #555555; /*fondo por si falla la imagen*/
 
-    transition-duration: 250ms;
+    transition-duration: 250ms;/*transición para la animación de hover*/
 }
-.card img {
+.card img { /*imagen de la carta*/
     border-radius: 1rem;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    aspect-ratio: 5 / 9;
+    max-width: 100%;/*que el maximo ancho de la imagen de la carta sea el ancho de la misma*/
+    aspect-ratio: 5 / 9;/*el mismo aspect ratio de la carta*/
     
-    grid-area: img;
-    grid-column: 1;
+    grid-column: 1;/*para superponer la imagen con el resto de elementos*/
     grid-row: 1 / 2;
 }
-.card h4 {
-    grid-area: header;
-    grid-column: 1;
+.card h4 { /*header de la carta*/
+    grid-column: 1; /*superposición*/
     grid-row: 1 / 2;
-    position: relative;
-    z-index: 1;
+    z-index: 1; /*para traer al frente al header card*/
+    padding:  .4rem;
+    padding-left: .8rem;
     height: min-content;
     
     text-shadow: .1rem .1rem .5rem #1a1a1a;
     font-weight: normal;
-    padding:  .4rem;
-    padding-left: .8rem;
     background-color: #00bfff76;
     color: white;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 1rem 1rem 0 0; /*igualar con el borde redondeado de la card*/
 }
-.card .favorito-img {
-    z-index: 2;
+.card .favorito-img { /*icono de carta favorita*/
+    z-index: 2;/*para traer el icono por encima del card header*/
+    margin: .4rem;
     width: 3rem;
     aspect-ratio: 1 / 1;
-    object-fit: contain;
-    margin: .4rem;
-
+    object-fit: contain;/*para que no recorte la imagen*/
     justify-self: flex-end;
 }
-.card ul {
-    display: none;
+.card ul { /*wrapper de las tags de las cartas*/
+    display: none;/*que se oculte hasta el hover*/
 }
 
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.1);/*que se agrande la carta x1.1 veces*/
 }
-.card:hover ul {
+.card:hover ul { /*wrapper de las tags de las cartas*/
     display: flex;
     align-items: flex-start;
     align-content: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
-    grid-column: 1;
+
+    grid-column: 1;/*que se superponga con los demas elementos de la carta*/
     grid-row: 1 / 2;
     align-self: flex-end;
 
@@ -70,7 +64,7 @@
     border-radius: 0 0 1rem 1rem;
     
 }
-.card ul li {
+.card ul li { /*tags de las cartas*/
     padding: .2rem;
     margin: .1rem;
     width: max-content;
@@ -78,420 +72,3 @@
     background-color: #ffa600;
     color: darkslategrey;
 }
-/* .header-card{
-    display: flex;
-    background-color: blue;
-    justify-content: space-evenly;
-    width: 100%;
-    height: auto;
-}
-.nombre-card{
-    align-content: center;
-    text-align: center;
-}
-.logo-card{
-    height: auto;
-    max-width: 5rem;
-    display: block;
-}
-.img {
-    width: 100%;
-    height: 100%;
-    grid-row: 2 / 3;
-    grid-column: 1;
-    align-self: flex-start;
-    object-fit: cover;
-    object-position: top;
-}
-.body-card{
-    background-color: aqua;
-    grid-row: 2 / 3;
-    grid-column: 1;
-    align-self: flex-end;
-} */
-/* --------------------------------------------------------------------------------------------------------------------------------------- */
-/* ---------CARTA ANDROIDE-------- */
-.header-androide{
-    background-color: #7a0f0f;
-}
-.body-androide{
-    background-color: #c81e1e;
-    color: #f1f1f1;
-    font-family: arial;
-    padding: 7px 5px;
-    border-radius: 0 0 5% 5%;
-}
-/* ------------CARTA SAIYAN---------------- */
-.header-saiyan{
-    background-color: #b8860b;
-}
-.body-saiyan{
-    background-color: #e0a800;
-    color: #1a1a1a;
-    font-family: arial;
-    padding: 7px 5px;
-    border-radius: 0 0 5% 5%;
-}
-/* --------------CARTA NAMEKIANO--------------- */
-.header-namekiano{
-    background-color: #1f5f3a;
-}
-.body-namekiano{
-    background-color: #2e8b57;
-    color: #e8f5e9;
-    font-family: arial;
-    padding: 7px 5px;
-    border-radius: 0 0 5% 5%;
-}
-/* ---------CARTA DEMONIO DEL FRIO------------- */
-.header-demonio-del-frio{
-    background-color: #4b0082;
-}
-.body-demonio-del-frio{
-    background-color: #7b2cbf;
-    color: #f3e8ff;
-    font-family: arial;
-    padding: 7px 5px;
-    border-radius: 0 0 5% 5%;
-}
-/* -------CARTA DIOS---------- */
-.header-dios{
-    background-color: #ff4500;
-}
-.body-dios{
-    background-color: #ff4500;
-    color: #1a1a1a;
-    font-family: arial;
-    padding: 7px 5px;
-    border-radius: 0 0 5% 5%;
-}
-/* ------CARTA ANGEL---------- */
-.header-angel{
-    background-color: #e0f7ff;
-}
-.body-angel{
-    background-color: #e0f7ff;
-    color: #1a1a1a;
-    font-family: arial;
-    padding:7px 5px;
-    border-radius: 0 0 5% 5%;
-}
-/* -------- SOLDADO DE FREEZEER ---------- */
-.header-soldado-de-freezer{
-    background-color: #555555;
-}
-.body-soldado-de-freezer{
-    background-color: #555555;
-    color: #f0f0f0;
-    font-family: arial;
-    padding: 7px 5px;
-    border-radius: 0 0 5% 5%;
-}
-/* ------------ CARTA MAJIN ------------- */
-.header-majin{
-    background-color: #ff69b4;
-}
-.body-majin{
-    background-color: #ff69b4;
-    color: #f5e6d3;
-    font-family: arial;
-    padding: 7px 5px;
-    border-radius: 0 0 5% 5%;
-}
-/* --------- DEMONIO --------------- */
-.header-demonio{
-    background-color: #5a2a0c;
-}
-.body-demonio{
-    background-color: #5a2a0c;
-    color: #f5e6d3;
-    font-family: arial;
-    padding: 7px 5px;
-    border-radius: 0 0 5% 5%;
-
-}
-
-/* -----------------CARTAS LEGENDARIAS---------------------- */
-
-.header-androide.legendary, .header-saiyan.legendary{
-    color: #FFD700;
-}
-.body-androide.legendary, .body-saiyan.legendary{
-    border-color: #FFD700;
-    color: #FFD700;
-    text-align: center;
-}
-.imagen-androide.legendary, .imagen-saiyan.legendary{
-    border-color: #FFD700;
-}
-.tipo-legendary-androide, .tipo-legendary-saiyan{  
-    background-color: #b8860b;
-    font-size: 18px;
-    border: 1px solid #FFD700;
-    padding: 3px;
-}
-.legendary-span{
-    text-decoration-line: underline;
-    font-size: large;
-}
-
-/* ------------------CARTAS ELITES-------------------- */
-.header-namekiano.elite, .header-demonio-del-frio.elite{
-    color: #a855f7;
-}
-.body-namekiano.elite, .body-demonio-del-frio.elite{
-    border-color: #a855f7;
-    color: #c084fc;
-    text-align: center;
-}
-.imagen-namekiano.elite, .imagen-demonio-del-frio.elite{
-    border-color: #a855f7;
-   
-}
-.tipo-elite-namekiano, .tipo-elite-namekiano{
-    background-color: #7e22ce;
-    font-size: 18px;
-    border: 1px solid #a855f7;
-    padding: 3px;
-}
-.elite-span{
-    text-decoration-line: underline;
-    font-size: large;
-}
-/* --- PALETA EXCLUSIVA DE SAIYAN-ELITE PARA QUE SE LEA MEJOR*/
-.header-saiyan.elite{
-    color: #6d28d9;
-}
-.body-saiyan.elite{
-    border-color: #6d28d9;
-    color: #3c1872;
-    text-align: center;
-}
-.imagen-saiyan.elite{
-    border-color: #6d28d9;
-}
-.tipo-elite-saiyan{
-    background-color: #4c1d95;
-    font-size: 18px;
-    border: 1px solid #6d28d9;
-    padding: 3px;
-}
-
-
-
- /* ---------------------CARTAS GUERRERO ------------------- */
-
-.header-saiyan.guerrero{
-    color: #1e90ff;
-}
-.body-saiyan.guerrero{
-    border-color: #1e90ff;
-    color: #60a5fa;
-    text-align: center;
-}
-.imagen-saiyan.guerrero{
-    border-color: #1e90ff;
-   
-}
-.tipo-guerrero-saiyan{
-    background-color: #1e3a8a;
-    font-size: 18px;
-    border: 1px solid #1e90ff;
-    padding: 3px;
-}
-.guerrero-span{
-    text-decoration-line: underline;
-    font-size: large;
-}
-
-/* -------------CARTAS DIVINO------------------ */
-.header-saiyan.divino{
-    color: #00BFFF;
-}
-.body-saiyan.divino{
-    border-color: #00BFFF;
-    color: #00BFFF;
-    text-align: center;
-}
-.imagen-saiyan.divino{
-    border-color: #00BFFF;
-   
-}
-.tipo-divino-saiyan{
-    background-color: #00BFFF;
-    font-size: 18px;
-    border: 1px solid #00BFFF;
-    padding: 3px;
-}
-.divino-span{
-    text-decoration-line: underline;
-    font-size: large;
-}
-
-/* ------------  CARTAS DIOS ------------------- */
-.header-saiyan.dios{
-    color: #ff4500;
-}
-.body-saiyan.dios{
-    border-color: #ff4500;
-    color: #ffb199;
-    text-align: center;
-}
-.imagen-saiyan.dios{
-    border-color: #ff4500;
-   
-}
-.tipo-dios-saiyan{
-    background-color: #1e3a8a;
-    font-size: 18px;
-    border: 1px solid #ff4500;
-    padding: 3px;
-}
-.dios-span{
-    text-decoration-line: underline;
-    font-size: large;
-}
-
-/*------------------ CARTAS ANGEL -------------------  */
-.header-saiyan.angel{
-    color: #ffffff;
-}
-.body-saiyan.angel{
-    border-color: #ffffff;
-    color: #ffd700;
-    text-align: center;
-}
-.imagen-saiyan.angel{
-    border-color: #ffffff;
-   
-}
-.tipo-angel-saiyan{
-    background-color: #1e3a8a;
-    font-size: 18px;
-    border: 1px solid #ffffff;
-    padding: 3px;
-}
-.angel-span{
-    text-decoration-line: underline;
-    font-size: large;
-}
-
-
-@media (max-width: 50em) {
-    .card {
-        width: 10rem;
-    }
-    .card h4 {
-        font-size: large;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
-}
- */
-
-
-
-
-
-
-
-/* .card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    height: 380px;
-    width: 200px;
-}
-.card img{
-    width: 50%;
-    height: 50%;
-   
-}
-.card.saiyan{
-    background: linear-gradient(#ffde0b,#ff931f)
-
-}
-.descripcion{
-    text-align: center ;   
-}
-
-.saiyan h2{
-    color: #ff931f;
-    
-}
-.card.namekiano{
-    background-color: #5bea08;
-}
-.namekiano h2{
-    color: #00c40a;
-}
-.card.demonio-del-frio{
-    background-color: purple;
-}
-.card.androide{
-    background-color: rgb(255, 27, 27);
-}
-.card.header-androide{
-    background-color: darkred;
-    margin: 0;
-    width: 100%;
-    height: 10%;
-    text-align: center;
-} */
