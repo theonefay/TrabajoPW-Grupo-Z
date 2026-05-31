@@ -1,0 +1,126 @@
+/* /* /* /* ------------LANDING------------- */
+/* #landing {
+    background-color: black;
+    width: 100%;
+    min-height: 30vh;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    align-items: center;
+    justify-items: end;
+    grid-template-areas: 
+    "text ."
+    "text button";
+
+}
+#texto-landing {
+    color: yellow;
+    width: 50vw;
+    text-align: left;
+    padding: 5rem 0;
+    padding-left: 20%;
+    
+    grid-area: text;
+}
+#boton-landing {
+    padding: 1em;
+    border: none;
+    width: min-content;
+    margin-right: 10%;
+    grid-area: button;
+} */ 
+.body-index{
+    display: grid;/*grid q*/
+    grid-auto-columns: 100%;
+    grid-auto-rows: min-content;
+    min-height: 100vh;
+    background-color: rgb(44, 44, 44); /*color de fondo de backup (por si falla la imagen de fondo)*/
+    background-image: url(../img/fondo4.jpg);
+    background-size: cover;/*para que cubra toda la pantalla si o si*/
+    background-attachment: fixed; /*para que te siga la imagen cuando scrolleas*/
+}
+.contenedor-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 15rem);/*repeat() con auto-fit permite repetir la cantidad de columnas que entren en el ancho total de la pantalla,  y 15rem es el mismo tamaño que la carta*/
+    justify-content: center; /*para que el contenedor este centrado*/
+    /*para que los items esten centrados dentro de su espacio individual*/
+    align-items: center;
+    justify-items: center;
+    gap: 3rem; 
+
+    width: 80%;
+    min-height: 80vh;
+    margin-top: 3em;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+#menu-filtro-cartas {/*wrapper donde se situan los select de raza, faccion y rareza, junto con sus labels*/
+    padding-top: 70px;
+    max-width: 100%;
+    margin: 2rem 0;/*margin arriba y abajo*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+    justify-items: start;
+    justify-self: center; /*para que el wrapper esté en el medio*/
+    gap: 1em;
+}
+#menu-filtro-cartas .label { 
+    padding-left: 1rem;/*para que este alineado con el texto del select (debe haber una mejor forma de hacerlo)*/
+    text-align: left;
+    align-content: end;  /*para que esté pegado al select*/
+    color: white;
+}
+
+#menu-filtro-cartas .select {
+    min-width: 13rem;
+    cursor: pointer; /*para mostrar que se puede interactuar con él*/
+    
+    font-size: medium;
+    padding: 1rem;
+    background-color: #010735;
+    color: white;
+    border-radius: 1rem;
+}
+
+#menu-filtro-cartas .select:hover {
+    background-color: rgb(158, 140, 0);
+}
+#menu-filtro-cartas .select selectedcontent {
+    color: white;
+}
+
+#menu-filtro-cartas .select option {
+    background-color: azure;
+}
+
+#menu-filtro-cartas .select option:checked {
+    background-color: #FFA500;
+}
+
+#menu-filtro-cartas .select:open {
+    border-radius: 1rem 1rem 0 0;/*quita el redondeado del borde en la parte baja para que coincida con la lista desplegable*/
+}
+
+
+@media (max-width: 50em){/*cambios para celular*/
+    #menu-filtro-cartas {
+        max-width: 90%;
+        margin: 2rem 10%;
+
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-auto-rows: 1fr;
+        grid-auto-flow: row;/*sobreescribir el flow del grid para que los items se pongan siempre en una fila nueva en vez de una columna*/
+        justify-self: center;
+        gap: 1em;
+    }
+    .contenedor-cards {
+        margin: 3rem 0 0 0;/*pseudo reset del margin*/
+        width: 90%;
+
+        justify-self: center;
+        grid-template-columns: repeat(auto-fit, max-content);
+    }
+}

@@ -1,46 +1,183 @@
-.body-index{
-    display: flex;
-    flex-direction: column;
+* { /*reset de todos los parametros relativamente importantes*/
     margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
 }
+
 /* ---------HEADER--------- */
-.header-index{
-    background: linear-gradient(#f9841e, #ffde0b);
-    width: 100%;
-    height: 50px;
+header{
+    background-color: rgba(0, 0, 0, 0.441);
 }
-.lista-header{
-    margin: 0;
-    padding: 15xp;
+.barra-nav{
+    width: 95%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-radius: 25px;
+    background: rgba(0, 0, 42, 0.712);
+    border: 2px solid rgba(255, 166, 0, 0.7);
+    box-shadow: 0 0 20px rgba(255, 166, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    z-index: 1000;
+}
+/* LOGO */
+.logo img{
+    width: 70px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px orange;
+}
+/* LINKS */
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+/* ITEMS */
+.nav-links li{
+    padding-right: 30px;
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
+/* LINKS */
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+.nav-links a:hover{
+    color: gold;
+    text-shadow: 0 0 10px gold;
+    transform: translateY(-2px);
+}
+.activo{
+    color: gold;
+    border-bottom: 3px solid gold;
+    padding-bottom: 5px;
+    text-shadow: 0 0 10px gold;
 }
 /* ------------MAIN------------- */
 main{
-    flex:1;
-    display: flex;
-    flex-direction: column;
-    background-color:#f9841e;
-    align-items: center;
-}
-.contenedor-cards{
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: burlywood;
-    width: 80%;
-    height: auto;
-
-
+    align-items: center;
+    height: 100%;
 }
 
 /* -------------FOOTER----------------- */
-footer{
-    background-color: indianred;
+footer {
+    background-color: #140042;
+    
     width: 100%;
-    height: 50px;
+    margin-top: 5rem;
+    padding: 1.5rem 0;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    gap: 2rem;
+    align-items: center;
+    justify-items: center; 
+    justify-content: center;
+}
+footer img {/*logo*/
+    display: inline-block;
+    max-width: 5rem;
+    height: auto;
+}
+footer div a {/*los links, tanto de redes como miscelaneos*/
+    display: block;
+    margin: .3rem;
+    align-content: center;
+    height: min-content;
+    align-content: center;
+}
+footer div a img { /*iconos de items de redes y miscelaneos*/
+    position: relative;
+    bottom: -.4rem;/*no supe hacerlos encajar correctamente sin esto, no me parece que sea lo mejor*/
+    margin-right: .2rem;
+    width: 1.6rem;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    display: inline-block;
+}
+footer div a:hover{
+    text-decoration: underline;
+}
+#wrapper-miscelaneos img {/*iconos de "link externo"*/
+    max-width: 1.4rem;
 }
 
+
+select,
+::picker(select) { /*quita la apariencia default de los select*/
+    appearance: none;
+}
+option::checkmark { /*es como el bullet de las listas*/
+    display: none;
+}
+
+select:focus {/*saca el borde cuando clickeas el select*/
+  outline: none;
+  box-shadow: none;
+}
+
+
+@media (max-width: 50em) {/*celular*/
+    .navbar {/*que los elementos se muestren como un menu desplegado*/
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: min-content;
+    }
+    .navbar li a {/*que los elementos no seleccionados desaparezcan*/
+        display: none;
+    }
+    #seleccionado {/*que el elemento actual se mantenga*/
+        display: inline-block;
+    }
+
+
+    
+    
+    footer {
+        grid-auto-flow: row;
+    }
+    footer h4 {/*sacar el titulo "redes"*/
+        display: none;
+    }
+    #wrapper-redes a img {
+        margin: .6rem;
+        min-width: 5vw;
+        max-width: 10vw;
+        display: inline-block
+    }
+    #wrapper-redes a {
+        display: inline-block;
+        color: none;/*no supe hacer una forma de quitar el texto sin quitar el link*/
+        font-size: 0;
+    }
+    #wrapper-miscelaneos img {
+        display: none;
+    }
+    #wrapper-miscelaneos a {
+        text-align: center;
+        margin: .5rem;
+    }
+}
 
 
 

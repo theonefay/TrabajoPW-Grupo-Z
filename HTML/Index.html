@@ -3,34 +3,305 @@
 <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/Style.css">
-    <link rel="stylesheet" href="CSS/style-card.css">
-    <link rel="icon" href="/img/esfera.png" type="image/png">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/style-card.css">
+    <link rel="stylesheet" href="../CSS/style-landing.css">
+    <link rel="icon" href="../img/esfera.png" type="image/png">
     <title>TP WEB</title>
 </head> 
-<body>
+<body class="body-index">
     <!---------        HEADER      ------------> 
     <header class="header-index">
-        <section>
-            <nav>
-                <ul class="lista-header">
+        <nav class="barra-nav">
+            <div class="logo">
+                <a href="../HTML/Index.html"><img src="../img/esfera.png" alt="logo dragon ball"></a>
+            </div>
+                <ul class="nav-links">
                     <li>
-                        <a href="formulario-registro.html">Registro</a>
+                        <a href="#" class="activo">LOGIN</a>
                     </li>
                     <li>
-                        <a href="login.html">Login</a>
+                        <a href="formulario-registro.html">REGISTER</a>
+                    </li>
+                     <li>
+                        <a href="album.html">ALBUM</a>
+                    </li>
+                    <li>
+                        <a href="perfil.html">PERFIL</a>
                     </li>
                 </ul>
-            </nav>
-        </section>
+         </nav>
     </header>
     <!---------        MAIN       ------------> 
     <main>
         
+        <menu id="menu-filtro-cartas"><!-- menu de filtros -->
+            <label for="select-raza" class="label">Raza</label>
+            <select name="select-raza" class="select raza">
+                <button><selectedcontent></selectedcontent></button>
+                <option value="none">Todas</option>
+                <option value="namekianos">Namekianos</option>
+                <option value="terricolas">Terricolas</option>
+                <option value="saiyans">Saiyans</option>
+                <option value="androides">Androides</option>
+                <option value="demonio-frio">Demonios del frio</option>
+                <option value="fusion">Fusiones</option>
+            </select>
+            
+            <label for="select-faccion" class="label">Facción</label>
+            <select name="select-faccion" class="select faccion">
+                <button><selectedcontent></selectedcontent></button>
+                <option value="none">Todas</option>
+                <option value="guerreros-z">Guerrero Z</option>
+                <option value="patrulla-roja">Patrulla Roja</option>
+                <option value="imperio-freezer">Imperio de Freezer</option>
+            </select>
+            
+            <label for="select-rareza" class="label">Rareza</label>
+            <select name="select-rareza" class="select rareza">
+                <button><selectedcontent></selectedcontent></button>
+                <option value="none">Todas</option>
+                <option value="comun">Comúnes</option>
+                <option value="rara">Raras</option>
+                <option value="epicas">Épicas</option>
+                <option value="legendarias">Legendarias</option>
+            </select>
+        </menu>
+
+        <section class="contenedor-cards">
+            <!----- GOHAN ---------->
+            <article class="card guerrero">
+                <img src="../img/gohan.jpg" alt="GOHAN" class="img-card-fondo">
+                <div class="header-card guerrero">
+                    <h4>GUERRERO</h4>
+                    <img src="../img/logo-rastreador.png" class="img-logo">
+                </div>
+                <div class="footer-card">
+                    <div class="nombre-card guerrero">
+                        <h1>GOHAN</h1>
+                        <span>SAIYAJIN</span>
+                    </div>
+                    <div class="atributos guerrero">
+                        <span>ATK: 9500</span>
+                        <span>DEF: 3700</span>
+                     </div>
+                </div>
+            </article>
+            <!----- GOKU SSJ BLUE  ------>
+            <article class="card divino">
+                <img src="../img/gokublue.jpg" alt="GOKU SSJ BLUE" class="img-card-fondo">
+                <div class="header-card divino">
+                    <h4>DIVINO</h4>
+                    <img src="../img/logo-rastreador.png" class="img-logo">
+                </div>
+                <div class="footer-card">
+                    <div class="nombre-card divino">
+                        <h1>GOKU</h1>
+                        <span>SSJ BLUE</span>
+                    </div>
+                    <div class="atributos divino">
+                        <span>ATK: 9500</span>
+                        <span>DEF: 3700</span>
+                     </div>
+                </div>
+            </article>
+            <!------- KID BUU -------->
+            <article class="card majin">
+                <img src="../img/kidbuu.jpg" alt="KID BUU" class="img-card-fondo">
+                <div class="header-card majin">
+                    <h4>MAJIN</h4>
+                    <img src="../img/logo-majin.png" class="img-logo">
+                </div>
+                <div class="footer-card">
+                    <div class="nombre-card majin">
+                        <h1>KID BUU</h1>
+                        <span>MAJIN</span>
+                    </div>
+                    <div class="atributos majin">
+                        <span>ATK: 9500</span>
+                        <span>DEF: 3700</span>
+                     </div>
+                </div>
+            </article>
+            <!--------- CELL ------------->
+            <article class="card legendary">
+                <img src="../img/cell.jpg" alt="CELL" class="img-card-fondo">
+                <div class="header-card legendary">
+                    <h4>LEGENDARY</h4>
+                    <img src="../img/logo-patrulla-roja.png" class="img-logo">
+                </div>
+                <div class="footer-card">
+                    <div class="nombre-card legendary">
+                        <h1>CELL PERFECTO</h1>
+                        <span>BIO-ANDROIDE</span>
+                    </div>
+                    <div class="atributos legendary">
+                        <span>ATK: 9500</span>
+                        <span>DEF: 3700</span>
+                     </div>
+                </div>
+            </article>
+            <!------ ANDROIDE 17  ------>
+            <article class="card epica">
+                <img src="../img/androide17.jpg" alt="ANDROIDE 17" class="img-card-fondo">
+                <div class="header-card epica">
+                    <h4>EPICA</h4>
+                    <img src="../img/logo-patrulla-roja.png" class="img-logo">
+                </div>
+                <div class="footer-card">
+                    <div class="nombre-card epica">
+                        <h1>N°17</h1>
+                        <span>ANDROIDE</span>
+                    </div>
+                    <div class="atributos epica">
+                        <span>ATK: 9500</span>
+                        <span>DEF: 3700</span>
+                     </div>
+                </div>
+            </article>
+            <!---------- GOHAN SSJ2 ----------->
+            <article class="card legendary">
+                <img src="../img/gohanssj2.jpg" alt="GOHAN SSJ2" class="img-card-fondo">
+                <div class="header-card legendary">
+                    <h4>LEGENDARY</h4>
+                    <img src="../img/logo-rastreador.png" class="img-logo">
+                </div>
+                <div class="footer-card">
+                    <div class="nombre-card legendary">
+                        <h1>GOHAN SSJ2</h1>
+                        <span>SAIYAN</span>
+                    </div>
+                    <div class="atributos legendary">
+                        <span>ATK: 9500</span>
+                        <span>DEF: 3700</span>
+                     </div>
+                </div>
+            </article>
+            <!------- GOKU SSJ GOD ------->
+            <article class="card dios">
+                <img src="../img/gokussjgod.jpg" alt="BEERUS" class="img-card-fondo">
+                <div class="header-card dios">
+                    <h4>DIOS</h4>
+                    <img src="../img/logo-rastreador.png" class="img-logo">
+                </div>
+                <div class="footer-card">
+                    <div class="nombre-card dios">
+                        <h1>GOKU</h1>
+                        <span>SAIYAN DIOS</span>
+                    </div>
+                    <div class="atributos dios">
+                        <span>ATK: 9500</span>
+                        <span>DEF: 3700</span>
+                     </div>
+                </div>
+            </article>
+            <!------- TRUNKS FUTURO ------->
+            <article class="card legendary">
+                <img src="../img/trunksfuturossj.jpg" alt="TRUNKS FUTURO" class="img-card-fondo">
+                <div class="header-card legendary">
+                    <h4>LEGENDARY</h4>
+                    <img src="../img/logo-rastreador.png" class="img-logo">
+                </div>
+                <div class="footer-card">
+                    <div class="nombre-card legendary">
+                        <h1>TRUNKS SSJ</h1>
+                        <span>SAIYAN</span>
+                    </div>
+                    <div class="atributos legendary">
+                        <span>ATK: 9500</span>
+                        <span>DEF: 3700</span>
+                     </div>
+                </div>
+            </article>
+            <!------- GOTEN ------->
+            <article class="card guerrero">
+                <img src="../img/goten.jpg" alt="GOTEN" class="img-card-fondo">
+                <div class="header-card guerrero">
+                    <h4>GUERRERO</h4>
+                    <img src="../img/logo-rastreador.png" class="img-logo">
+                </div>
+                <div class="footer-card">
+                    <div class="nombre-card guerrero">
+                        <h1>GOTEN</h1>
+                        <span>SAIYAN</span>
+                    </div>
+                    <div class="atributos guerrero">
+                        <span>ATK: 9500</span>
+                        <span>DEF: 3700</span>
+                     </div>
+                </div>
+            </article>
+            <!------- VEGETA SSJ BLUE ------->
+            <article class="card divino">
+                <img src="../img/vegeta-blue.jpg" alt="VEGETA SSJ BLUE " class="img-card-fondo">
+                <div class="header-card divino">
+                    <h4>DIVINO</h4>
+                    <img src="../img/logo-rastreador.png" class="img-logo">
+                </div>
+                <div class="footer-card">
+                    <div class="nombre-card divino">
+                        <h1>VEGETA</h1>
+                        <span>SAIYAN BLUE</span>
+                    </div>
+                    <div class="atributos divino">
+                        <span>ATK: 9500</span>
+                        <span>DEF: 3700</span>
+                     </div>
+                </div>
+            </article>
+            <!------- TEN SHIN HAN ------->
+            <article class="card guerrero">
+                <img src="../img/tenshinhan.jpg" alt="TEN SHIN HAN" class="img-card-fondo">
+                <div class="header-card guerrero">
+                    <h4>GUERRERO</h4>
+                    <img src="../img/logo-rastreador.png" class="img-logo">
+                </div>
+                <div class="footer-card">
+                    <div class="nombre-card guerrero">
+                        <h1>TEN SHIN HAN</h1>
+                        <span>HUMANO</span>
+                    </div>
+                    <div class="atributos guerrero">
+                        <span>ATK: 9500</span>
+                        <span>DEF: 3700</span>
+                     </div>
+                </div>
+            </article>
+            <!------- GOGETA ------->
+            <article class="card legendary">
+                <img src="../img/gogeta-ssj.jpg" alt="GOGETA SSJ" class="img-card-fondo">
+                <div class="header-card legendary">
+                    <h4>LEGENDARY</h4>
+                    <img src="../img/logo-rastreador.png" class="img-logo">
+                </div>
+                <div class="footer-card">
+                    <div class="nombre-card legendary">
+                        <h1>GOGETA SSJ</h1>
+                        <span>FUSION</span>
+                    </div>
+                    <div class="atributos legendary">
+                        <span>ATK: 9500</span>
+                        <span>DEF: 3700</span>
+                     </div>
+                </div>
+            </article>
+        </section>
     </main>
     <!---------        FOOTER      ------------> 
     <footer>
-        <p>&copy; 2026 Dev Skills Deck. Todos los derechos reservados.</p>
+        <img src="img/logo-dbz.png" alt="logo">
+        <div id="wrapper-redes">
+            <h4>Nuestras redes</h4>
+            <a href="https:\\www.instagram.com"><img src="img/instagram-icon.png" alt="Instagram">@dragonballproyect</a>
+            <a href="https:\\www.x.com"><img src="img/twitter-icon.png" alt="Twitter">@dbproyect</a>
+            <a href="https:\\www.youtube.com"><img src="img/youtube-icon.png" alt="Youtube">@dragonballproy</a>
+        </div>
+        <div id="wrapper-miscelaneos">
+            <a href=""><img src="img/external-link.png" alt="">Contáctanos</a>
+            <a href=""><img src="img/external-link.png" alt="">Ayuda</a>
+            <a href=""><img src="img/external-link.png" alt="">Preguntas frecuentes</a>
+        </div>
+
     </footer>
 </body>
 </html>

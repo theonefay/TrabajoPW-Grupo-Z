@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="../CSS/style-editar-perfil.css">
+    <link rel="icon"href="../img/esfera.png">
+    <title>EDITAR PERFIL</title>
+</head>
+<body>
+    <header>
+        <nav class="barra-nav">
+            <div class="logo">
+                <a href="../HTML/Index.html">
+                    <img src="../img/esfera.png"
+                    alt="logo dragon ball">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="login.html ">LOGIN</a>
+                </li>
+                <li>
+                    <a href="formulario-registro.html">REGISTER</a>
+                </li>
+                <li>
+                    <a href="album.html">ALBUM</a>
+                </li>
+                <li>
+                    <a href="perfil.html">
+                        PERFIL
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- MuAIN -->
+    <main>
+        <div class="contenedor-editar">
+            <!-- NAV PERFIL -->
+            <aside class="nav-perfil">
+                <figure class="foto-perfil">
+                    <img src="../img/vegeta-blue.jpg"
+                    alt="VEGETA BLUE">
+                    <figcaption>
+                        NOMBRE USUARIO
+                    </figcaption>
+                </figure>
+                <nav class="lista-perfil">
+                    <ul>
+                        <li>
+                            Mi Perfil
+                        </li>
+                        <li class="link-activo">
+                            Editar Perfil
+                        </li>
+                        <li>
+                            Mis Cartas
+                        </li>
+                        <li>
+                            Favoritos
+                        </li>
+                        <li>
+                         Configuracion
+                        </li>
+                        <li>
+                            Cerrar Sesion
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="info-perfil">
+                <!-- TITULO -->
+                <div class="titulo-central">
+                    <h2>
+                        EDITAR PERFIL
+                    </h2>
+                </div>
+                <div class="datos-usuarios">
+                    <form action="">
+                        <fieldset>
+                            <legend>
+                                Datos Personales
+                            </legend>
+                            <input type="text"placeholder="Nombre">
+                            <input type="text"placeholder="Apellido">
+                            <input type="text"placeholder="Nombre de usuario">
+                            <input type="email"placeholder="Correo Electronico">
+                            <input type="number"placeholder="DNI">
+                            <input type="tel"placeholder="+54 9 11 1234-5678">
+                            <input type="date">
+                            <select>
+                                <option value="">
+                                    Seleccionar Pais
+                                </option>
+                                <option value="argentina">
+                                    Argentina
+                                </option>
+                                <option value="uruguay">
+                                    Uruguay
+                                </option>
+                                <option value="brasil">
+                                    Brasil
+                                </option>
+                                <option value="mexico">
+                                    Mexico
+                                </option>
+                                <option value="espana">
+                                    España
+                                </option>
+                            </select>
+                            <textarea
+                            placeholder="Descripcion del perfil">
+                            </textarea>
+                            <input type="submit"class="boton-guardar">
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* FORMATO BASICO DE LA PAGINA */
+body{
+    width: 100%;
+    min-height: 100vh;
+}
 /* ----------- HEADER ----------- */
 header{
     background-color: rgba(0, 0, 0, 0.441);
@@ -22,7 +27,7 @@ header{
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-
+    
     z-index: 1000;
 }
 /* LOGO */
@@ -30,7 +35,7 @@ header{
     width: 70px;
     height: 50px;
     border-radius: 50%;
-    box-shadow:0 0 15px orange;
+    box-shadow: 0 0 15px orange;
 }
 /* LINKS */
 .nav-links{
@@ -55,7 +60,7 @@ header{
 /* HOVER */
 .nav-links a:hover{
     color: gold;
-    text-shadow:0 0 10px gold;
+    text-shadow: 0 0 10px gold;
     transform: translateY(-2px);
 }
 /* LINK ACTIVO */
@@ -72,8 +77,8 @@ header{
     background-image: url(../img/fondo3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
 }
@@ -94,7 +99,7 @@ header{
     border: 3px solid orange;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow:0 0 20px rgba(255,166,0,0.4);
+    box-shadow: 0 0 20px rgba(255,166,0,0.4);
 }
 .foto{
     grid-row: 1 / 3;
@@ -126,12 +131,9 @@ header{
     font-size: 25px;
     font-weight: bolder;
 }
-.descripcion-perfil p {
+.descripcion-perfil p{
     color: rgba(208, 204, 204, 0.979);
     font-style: italic;
-} 
-.descripcion-perfil.descripcion-usuario{
-    color: rgb(221, 221, 221);    
 }
 /* INFO */
 .info-perfil{
@@ -143,41 +145,184 @@ header{
     color: gold;
     border-top: 1px solid rgba(255,255,255,0.1);
 }
-
+.info-perfil a{
+    color: rgba(238, 211, 1, 0.7);
+    text-decoration: none;
+}
+.info-perfil a:hover{
+    color: gold;
+}
 /* CAJAS ABAJO */
 .perfil-part2{
+    min-height: 250px;
     background-color: rgba(0,0,0,0.6);
+    color: white;
     border: 3px solid orange;
     border-radius: 20px;
-    min-height: 250px;
-    color: white;
     overflow: hidden;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
 }
-
 .nav-card{
+    padding: 20px;
     background-color: rgba(68, 67, 67, 0.488);
     color: white;
-    padding: 20px;
-    border-bottom: 2px solid rgb(69, 69, 68);
     text-align: center;
-
+    border-bottom: 2px solid rgb(69, 69, 68);
 }
 .nav-card:hover{
     color: gold;
     border-bottom: 2px solid gold;
 }
 .contenedor-cartas-obtenidas{
-    background-color: rgba(0,0,0,0.6);
-    /* border: 3px solid orange; */
     min-height: 250px;
-    color: white;
     padding: 30px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
     grid-column: 1 / 3;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+/* --------------------------- */
+/* ------TABLETS------------- */
+/* -------------------------- */
+
+@media screen and (max-width: 999px){
+    .barra-nav{
+        margin: 10px auto;
+        padding: 10px 20px;
+        border-radius: 15px;
+    }
+    .logo img{
+        width: 50px;
+        height: 40px;
+    }
+    .nav-links{
+        gap: 20px;
+    }
+    .nav-links li{
+        padding-right: 15px;
+    }
+    .nav-links a{
+        font-size: 14px;
+    }
+    .activo{
+        padding-bottom: 3px;
+    }
+    .main-perfil{
+        padding-top: 120px;
+    }
+    .contenedor-principal{
+        gap: 20px;
+    }
+    .contenedor-perfil{
+        grid-template-columns: 200px 1fr;
+        border: 2px solid orange;
+        border-radius: 15px;
+    }
+    .foto{
+        padding: 20px;
+    }
+    .foto-perfil{
+        width: 130px;
+        height: 130px;
+        border: 3px solid orange;
+    }
+    .descripcion-perfil{
+        padding: 20px;
+        gap: 8px;
+    }
+    .nombre-usuario{
+        font-size: 20px;
+    }
+    .descripcion-perfil p{
+        font-size: 0.9rem;
+    }
+    .info-perfil{
+        padding: 15px 20px;
+    }
+    .perfil-part2{
+        min-height: 200px;
+        border: 2px solid orange;
+        border-radius: 15px;
+    }
+    .nav-card{
+        padding: 15px;
+        border-bottom: 1px solid rgb(69, 69, 68);
+    }
+    .nav-card:hover{
+        border-bottom: 1px solid gold;
+    }
+    .contenedor-cartas-obtenidas{
+        min-height: 200px;
+        padding: 20px;
+    }
+}
+
+/* ---------------------------*/
+/* ------CELULARES----------- */
+/* ----------------------------*/
+@media screen and (max-width: 500px){
+    .barra-nav{
+        margin: 0.5rem auto;
+        padding: 0.8em 1em;
+        border-width: 1px;
+    }
+    .logo img{
+        width: 35px;
+        height: 25px;
+    }
+    .nav-links{
+        gap: 15px;
+    }
+    .nav-links li{
+        padding-right: 1em;
+    }
+    .nav-links a{
+        font-size: 0.75rem;
+    }
+    .main-perfil{
+        padding-top: 9em;
+    }
+    .contenedor-principal{
+        gap: 15px;
+    }
+    .contenedor-perfil{
+        grid-template-columns: 0.5fr 1fr;
+        border: 1px solid orange;
+        border-radius: 10px;
+    }
+    .foto{
+        padding: 0.9em;
+    }
+    .foto-perfil{
+        width: 100%;
+        height: 110px;
+        border: 2px solid orange;
+    }
+    .descripcion-perfil{
+        padding: 1em;
+        gap: 5px;
+    }
+    .nombre-usuario{
+        font-size: 17px;
+    }
+    .info-perfil{
+        padding: 1em;
+    }
+    .perfil-part2{
+        min-height: 100px;
+        border: 1px solid orange;
+        border-radius: 10px;
+    }
+    .nav-card{
+        padding: 10px;
+    }
+    .contenedor-cartas-obtenidas{
+        min-height: 100px;
+        padding: 15px;
+    }
 }
